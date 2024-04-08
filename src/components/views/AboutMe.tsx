@@ -23,7 +23,7 @@ const AboutMe = () => {
             </Container>
             <Container style={containerStyle} maxWidth="md">
                 <Typography variant="h4" gutterBottom>
-                    {t("About Me")}
+                    {t("Profile")}
                 </Typography>
                 <Typography variant="body1">{t("aboutMeContent")}</Typography>
             </Container>
