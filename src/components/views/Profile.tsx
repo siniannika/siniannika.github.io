@@ -5,24 +5,26 @@ import { CenteredBox } from "../layout/Layout";
 
 const containerStyle = {
     paddingTop: "2rem",
-    paddingBottom: "2rem",
 };
 
-const AboutMe = () => {
+const Profile = () => {
     const { t } = useTranslation();
 
     return (
         <>
             <Container style={containerStyle} maxWidth="xl">
-                <Typography variant="h3" gutterBottom>
-                    Roope Pöyry - Senior Software Developer
+                <Typography variant="h4" mb={3}>
+                    {t("Name")}
+                </Typography>
+                <Typography variant="h5" mb={3}>
+                    {t("JobTitle")}
                 </Typography>
                 <CenteredBox>
                     <MyAvatar size="lg" />
                 </CenteredBox>
             </Container>
             <Container style={containerStyle} maxWidth="md">
-                <Typography variant="h4" gutterBottom>
+                <Typography variant="h5" gutterBottom>
                     {t("Profile")}
                 </Typography>
                 <Typography variant="body1">{t("aboutMeContent")}</Typography>
@@ -31,4 +33,4 @@ const AboutMe = () => {
     );
 };
 
-export default AboutMe;
+export default Profile;

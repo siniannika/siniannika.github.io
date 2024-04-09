@@ -81,7 +81,9 @@ function Header() {
             <AppBar position="sticky" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
                 <Container maxWidth={false}>
                     <Toolbar disableGutters>
-                        <MyAvatar sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+                        <IconButton href="#" sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}>
+                            <MyAvatar />
+                        </IconButton>
                         <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
                             <IconButton
                                 size="large"
@@ -95,7 +97,9 @@ function Header() {
                             </IconButton>
                         </Box>
                         <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-                            <MyAvatar />
+                            <IconButton href="#">
+                                <MyAvatar />
+                            </IconButton>
                         </Box>
                         <Tabs value={currentPath} sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
                             {pages.map((page) => (

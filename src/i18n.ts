@@ -7,6 +7,8 @@ import { initReactI18next } from "react-i18next";
 const resources = {
     en: {
         translation: {
+            Name: "Roope Pöyry",
+            JobTitle: "Senior Software Developer",
             Profile: "Profile",
             Technologies: "Technologies",
             Experience: "Experience",
@@ -51,6 +53,8 @@ const resources = {
     },
     fi: {
         translation: {
+            Name: "Roope Pöyry",
+            JobTitle: "Senior Software Developer",
             Profile: "Profiili",
             Technologies: "Teknologiat",
             Experience: "Työkokemus",
