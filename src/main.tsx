@@ -9,6 +9,10 @@ import "./index.css";
 const darkTheme = createTheme({
     palette: {
         mode: "dark",
+        background: {
+            paper: "#101720",
+            default: "#101720",
+        },
     },
 });
 
