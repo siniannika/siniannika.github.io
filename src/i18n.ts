@@ -18,6 +18,7 @@ const resources = {
                 "Skilled Software Developer with 7 years of experience. I have developed multiple services from scratch to customers' needs and modernized older systems. I master multiple technologies and adopt new ones easily. I enjoy solving various kinds of challenges in my work.",
             email: "roope.poyry1@gmail.com",
             linkedin: "linkedin.com/in/rpoyry",
+            github: "github.com/rrobben",
             workExperience: {
                 header: {
                     EasyOpp: "Senior Software Developer, EasyOpp",
@@ -69,6 +70,7 @@ const resources = {
                 "Osaava ohjelmistosuunnittelija 7 vuoden kokemuksella. Olen kehittänyt useita palveluita alusta saakka asiakkaiden tarpeisiin sekä ollut uudistamassa vanhempia järjestelmiä. Hallitsen useampia teknologioita ja omaksun myös uudet nopeasti. Nautin työssäni erityyppisten haasteiden ratkaisemisesta.",
             email: "roope.poyry1@gmail.com",
             linkedin: "linkedin.com/in/rpoyry",
+            github: "github.com/rrobben",
             workExperience: {
                 header: {
                     EasyOpp: "Senior Software Developer, EasyOpp",
