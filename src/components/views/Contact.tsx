@@ -36,7 +36,7 @@ const Contact = () => {
                                     <Icon />
                                 </Avatar>
                             </ListItemIcon>
-                            <ListItemText>
+                            <ListItemText primaryTypographyProps={{ textAlign: "initial"}}>
                                 {href ? (
                                     <Link target="_blank" href={href}>
                                         {t(text)}

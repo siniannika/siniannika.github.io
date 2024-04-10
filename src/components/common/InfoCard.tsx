@@ -8,13 +8,13 @@ interface Props {
     header: string;
     content: string;
     subcontents: string[];
-    sx?: SxProps
+    sx?: SxProps;
 }
 
 const InfoCard = ({ header, content, subcontents, sx }: Props) => {
     return (
         <Card sx={sx}>
-            <CardHeader title={header} />
+            <CardHeader title={header} sx={{ textAlign: "center" }} />
             <CardContent>
                 <Typography variant="body1" gutterBottom>
                     {content}

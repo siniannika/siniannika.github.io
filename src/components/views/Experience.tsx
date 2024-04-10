@@ -12,6 +12,7 @@ const Experience = () => {
             <AccordionGroup
                 items={exp.map((e) => ({
                     header: t(`workExperience.header.${e}`),
+                    subheader: t(`workExperience.subheader.${e}`),
                     content: t(`workExperience.content.${e}`),
                 }))}
             />

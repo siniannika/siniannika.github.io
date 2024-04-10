@@ -20,9 +20,14 @@ const resources = {
             linkedin: "linkedin.com/in/rpoyry",
             workExperience: {
                 header: {
-                    EasyOpp: "Senior Software Developer, EasyOpp - Remote, 1/2023 -",
-                    Adalia: "Software Developer, Adalia Oy - Tampere, 4/2017 - 1/2023",
+                    EasyOpp: "Senior Software Developer, EasyOpp",
+                    Adalia: "Software Developer, Adalia Oy",
                     Other: "Other",
+                },
+                subheader: {
+                    EasyOpp: "1/2023 - Present",
+                    Adalia: "4/2017 - 1/2023",
+                    Other: "",
                 },
                 content: {
                     EasyOpp:
@@ -66,9 +71,14 @@ const resources = {
             linkedin: "linkedin.com/in/rpoyry",
             workExperience: {
                 header: {
-                    EasyOpp: "Senior Software Developer, EasyOpp - Remote, 1/2023 -",
-                    Adalia: "Software Developer, Adalia Oy - Tampere, 4/2017 - 1/2023",
-                    Other: "Muuta",
+                    EasyOpp: "Senior Software Developer, EasyOpp",
+                    Adalia: "Software Developer, Adalia Oy",
+                    Other: "Other",
+                },
+                subheader: {
+                    EasyOpp: "1/2023 - Present",
+                    Adalia: "4/2017 - 1/2023",
+                    Other: "",
                 },
                 content: {
                     EasyOpp:

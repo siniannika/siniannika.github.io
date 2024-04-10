@@ -140,7 +140,7 @@ function Header() {
                                         selected={l === i18n.language}
                                         onClick={() => handleChangeLang(l)}
                                     >
-                                        <Typography textAlign="center">{t(`lang.${l}`)}</Typography>
+                                        <Typography>{t(`lang.${l}`)}</Typography>
                                     </MenuItem>
                                 ))}
                             </Menu>
