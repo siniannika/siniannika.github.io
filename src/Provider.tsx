@@ -1,4 +1,4 @@
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { ThemeProvider, createTheme, responsiveFontSizes } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import "./i18n.ts";
 import Router from "./Router.tsx";
@@ -23,10 +23,27 @@ const darkTheme = createTheme({
             },
         },
     },
+    typography: {
+        fontFamily: [
+            "-apple-system",
+            "BlinkMacSystemFont",
+            '"Segoe UI"',
+            "Roboto",
+            '"Helvetica Neue"',
+            "Arial",
+            "sans-serif",
+            '"Apple Color Emoji"',
+            '"Segoe UI Emoji"',
+            '"Segoe UI Symbol"',
+        ].join(","),
+    },
+    // typography: {
+    //     fontFamily: "Montserrat"
+    // }
 });
 
 const Provider = () => (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={responsiveFontSizes(darkTheme)}>
         <CssBaseline />
         <Router />
     </ThemeProvider>

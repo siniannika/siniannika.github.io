@@ -1,6 +1,8 @@
-import { SxProps } from "@mui/material";
+import { SvgIconTypeMap, SxProps, styled } from "@mui/material";
+import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
+import { OverridableComponent } from "@mui/material/OverridableComponent";
 import Typography from "@mui/material/Typography";
 
 const containerStyle = {
@@ -12,11 +14,12 @@ interface Props {
     children: JSX.Element | JSX.Element[];
     header: string;
     subheader?: string;
+    Icon?: OverridableComponent<SvgIconTypeMap>;
 }
 
-const Layout = ({ children, header, subheader }: Props) => (
+const Layout = ({ children, header, subheader, Icon }: Props) => (
     <Container style={containerStyle} maxWidth="md">
-        <LayoutHeader text={header} />
+        <LayoutHeader text={header} Icon={Icon} />
         {subheader ? <LayoutSubheader text={subheader} /> : null}
         {children}
     </Container>
@@ -26,12 +29,30 @@ export default Layout;
 
 interface HeaderProps {
     text: string;
+    Icon?: OverridableComponent<SvgIconTypeMap>;
 }
 
-export const LayoutHeader = ({ text }: HeaderProps) => (
-    <Typography variant="h4" mb={3}>
+const StyledTypography = styled(Typography)(({ theme }) => ({
+    marginBottom: theme.spacing(3),
+    display: "flex",
+    justifyContent: "center",
+    [theme.breakpoints.down("sm")]: {
+        lineHeight: 1.5,
+    },
+    [theme.breakpoints.up("md")]: {
+        lineHeight: 1,
+    },
+}));
+
+export const LayoutHeader = ({ text, Icon }: HeaderProps) => (
+    <StyledTypography variant="h4">
+        {Icon ? (
+            <Avatar sx={{ mr: 2, backgroundColor: "text.secondary" }}>
+                <Icon />
+            </Avatar>
+        ) : null}
         {text}
-    </Typography>
+    </StyledTypography>
 );
 
 export const LayoutSubheader = ({ text }: HeaderProps) => (

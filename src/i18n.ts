@@ -39,7 +39,7 @@ const resources = {
             },
             education: {
                 header: {
-                    Tuni: "Tampere University / TUT (until 2018)",
+                    Tuni: "Tampere University / TUT",
                     "Järvenpään lukio": "Järvenpään lukio",
                 },
                 content: {
@@ -91,7 +91,7 @@ const resources = {
             },
             education: {
                 header: {
-                    Tuni: "Tampereen yliopisto / TTY (2018 asti)",
+                    Tuni: "Tampereen yliopisto / TTY",
                     "Järvenpään lukio": "Järvenpään lukio",
                 },
                 content: {
