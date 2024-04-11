@@ -40,7 +40,7 @@ const StyledTypography = styled(Typography)(({ theme }) => ({
         lineHeight: 1.5,
     },
     [theme.breakpoints.up("md")]: {
-        lineHeight: 1,
+        lineHeight: 1.1,
     },
 }));
 

@@ -25,6 +25,7 @@ const darkTheme = createTheme({
     },
     typography: {
         fontFamily: [
+            '"Montserrat"',
             "-apple-system",
             "BlinkMacSystemFont",
             '"Segoe UI"',
@@ -37,9 +38,6 @@ const darkTheme = createTheme({
             '"Segoe UI Symbol"',
         ].join(","),
     },
-    // typography: {
-    //     fontFamily: "Montserrat"
-    // }
 });
 
 const Provider = () => (
