@@ -60,12 +60,12 @@ const resources = {
                     AWS: "AWS",
                 },
                 content: {
-                    React: "I have multiple years of experience of working with React UIs both with TypeScript and JavaScript. I have designed and implemented several React apps from scratch which has allowed me to try and learn new things about React along the way. I have used React in my personal projects as well such as this website and converted one React PWA to Android app and published it at the Play Store.",
+                    React: "I have multiple years of experience of working with React UIs both with TypeScript and JavaScript. I have designed and implemented several React apps from scratch which has allowed me to try and learn new things about React along the way. I have used React in my personal projects as well such as this website and converted a React PWA to Android app and published it at the Play Store.",
                     ".NET": "I have worked with C# + .NET backends over a year now at EasyOpp. Currently using mainly .NET 8 and Entity Framework Core in our APIs. Additionally I have also worked with SignalR for sending real-time messages to our React UI from our API. For Unit tests we have been using NUnit framework.",
                     Rails: "I have 6 years of experience of maintaining and developing Rails applications both with existing systems and completely new projects. I have had the responsibility to design and implement application architecture, data model, user and permission management etc.",
                     Azure: "Currently all our apps are hosted in Azure and deployments are configured using Bicep scripts. I have done the setup for our new mobile frontend which is run as an App Service.",
-                    AWS: "I have experience of setting up containers to be run in AWS Fargate and configuring load balancers for these services. I have also setup API Gateways using <a href=\"https://docs.rubyonjets.com/\" target=\"_blank\">Ruby on Jets</a> to deploy the application code to be run in AWS Lambda.",
-                }
+                    AWS: 'I have experience of setting up containers to be run in AWS Fargate and configuring load balancers for these services. I have also setup API Gateways using <a href="https://docs.rubyonjets.com/" target="_blank">Ruby on Jets</a> to deploy the application code to be run in AWS Lambda.',
+                },
             },
             lang: {
                 en: "In English",
@@ -75,8 +75,6 @@ const resources = {
     },
     fi: {
         translation: {
-            Name: "Roope Pöyry",
-            JobTitle: "Senior Software Developer",
             Profile: "Profiili",
             Technologies: "Teknologiat",
             Experience: "Työkokemus",
@@ -84,19 +82,11 @@ const resources = {
             Contact: "Yhteystiedot",
             aboutMeContent:
                 "Osaava ohjelmistosuunnittelija 7 vuoden kokemuksella. Olen kehittänyt useita palveluita alusta saakka asiakkaiden tarpeisiin sekä ollut uudistamassa vanhempia järjestelmiä. Hallitsen useampia teknologioita ja omaksun myös uudet nopeasti. Nautin työssäni erityyppisten haasteiden ratkaisemisesta.",
-            email: "roope.poyry1@gmail.com",
-            linkedin: "linkedin.com/in/rpoyry",
-            github: "github.com/rrobben",
             workExperience: {
                 header: {
                     EasyOpp: "Senior Software Developer, EasyOpp",
                     Adalia: "Software Developer, Adalia Oy",
                     Other: "Other",
-                },
-                subheader: {
-                    EasyOpp: "1/2023 - Present",
-                    Adalia: "4/2017 - 1/2023",
-                    Other: "",
                 },
                 content: {
                     EasyOpp:
@@ -116,12 +106,7 @@ const resources = {
                 },
                 subcontent: {
                     Tuni: "Ohjelmistotuotanto <br/> 2012-2019",
-                    "Järvenpään lukio": "2008-2011",
                 },
-            },
-            lang: {
-                en: "In English",
-                fi: "Suomeksi",
             },
         },
     },
@@ -133,6 +118,7 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
         lng: "en", // language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
         // you can use the i18n.changeLanguage function to change the language manually: https://www.i18next.com/overview/api#changelanguage
         // if you're using a language detector, do not define the lng option
+        fallbackLng: "en",
         interpolation: {
             escapeValue: false, // react already safes from xss
         },
