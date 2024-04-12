@@ -51,6 +51,22 @@ const resources = {
                     "Järvenpään lukio": "2008-2011",
                 },
             },
+            tech: {
+                header: {
+                    React: "React",
+                    ".NET": ".NET",
+                    Rails: "Ruby on Rails",
+                    Azure: "Azure",
+                    AWS: "AWS",
+                },
+                content: {
+                    React: "I have multiple years of experience of working with React UIs both with TypeScript and JavaScript. I have designed and implemented several React apps from scratch which has allowed me to try and learn new things about React along the way. I have used React in my personal projects as well such as this website and converted one React PWA to Android app and published it at the Play Store.",
+                    ".NET": "I have worked with C# + .NET backends over a year now at EasyOpp. Currently using mainly .NET 8 and Entity Framework Core in our APIs. Additionally I have also worked with SignalR for sending real-time messages to our React UI from our API. For Unit tests we have been using NUnit framework.",
+                    Rails: "I have 6 years of experience of maintaining and developing Rails applications both with existing systems and completely new projects. I have had the responsibility to design and implement application architecture, data model, user and permission management etc.",
+                    Azure: "Currently all our apps are hosted in Azure and deployments are configured using Bicep scripts. I have done the setup for our new mobile frontend which is run as an App Service.",
+                    AWS: "I have experience of setting up containers to be run in AWS Fargate and configuring load balancers for these services. I have also setup API Gateways using <a href=\"https://docs.rubyonjets.com/\" target=\"_blank\">Ruby on Jets</a> to deploy the application code to be run in AWS Lambda.",
+                }
+            },
             lang: {
                 en: "In English",
                 fi: "Suomeksi",
