@@ -34,7 +34,7 @@ const Contact = () => {
                     {contacts.map(({ Icon, text, href }) => (
                         <ListItem key={text}>
                             <ListItemIcon>
-                                <Avatar sx={{ backgroundColor: "text.secondary" }}>
+                                <Avatar sx={{ backgroundColor: "background.icon" }}>
                                     <Icon />
                                 </Avatar>
                             </ListItemIcon>

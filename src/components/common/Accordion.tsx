@@ -21,6 +21,8 @@ const StyledAccordion = styled((props: AccordionProps) => <Accordion disableGutt
 const StyledAccordionDetails = styled(AccordionDetails)(({ theme }) => ({
     padding: theme.spacing(2),
     borderTop: "1px solid rgba(0, 0, 0, .125)",
+    textAlign: "justify",
+    backgroundColor: theme.palette.background.default,
     "& a": {
         color: theme.palette.primary.main,
     },
@@ -62,7 +64,7 @@ const AccordionGroup = ({ items }: Props) => {
                     i.header
                 )}
             </AccordionSummary>
-            <StyledAccordionDetails sx={{ textAlign: "justify" }}>
+            <StyledAccordionDetails>
                 <div dangerouslySetInnerHTML={{ __html: i.content }}></div>
             </StyledAccordionDetails>
         </StyledAccordion>

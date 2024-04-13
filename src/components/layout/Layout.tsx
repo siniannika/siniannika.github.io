@@ -47,7 +47,7 @@ const StyledTypography = styled(Typography)(({ theme }) => ({
 export const LayoutHeader = ({ text, Icon }: HeaderProps) => (
     <StyledTypography variant="h4">
         {Icon ? (
-            <Avatar sx={{ mr: 2, backgroundColor: "text.secondary" }}>
+            <Avatar sx={{ mr: 2, backgroundColor: "background.icon" }}>
                 <Icon />
             </Avatar>
         ) : null}
