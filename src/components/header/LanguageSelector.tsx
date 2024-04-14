@@ -6,13 +6,15 @@ import IconButton from "@mui/material/IconButton";
 import LanguageIcon from "@mui/icons-material/Language";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { I18nContext } from "../../i18n/I18nProvider";
 
 const langs = ["en", "fi"];
 
 function LanguageSelector() {
     const [anchorElLang, setAnchorElLang] = useState<null | HTMLElement>(null);
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
+    const i18n = useContext(I18nContext);
 
     const handleOpenLangMenu = (event: React.MouseEvent<HTMLElement>) => {
         setAnchorElLang(event.currentTarget);
@@ -59,7 +61,7 @@ function LanguageSelector() {
 export default LanguageSelector;
 
 export const MobileLanguageSelector = () => {
-    const { i18n } = useTranslation();
+    const i18n = useContext(I18nContext);
 
     const handleChangeLang = (l: string) => {
         i18n.changeLanguage(l);

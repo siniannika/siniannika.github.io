@@ -1,0 +1,33 @@
+{
+    "Profile": "Profiili",
+    "Technologies": "Teknologiat",
+    "Experience": "Työkokemus",
+    "Education": "Koulutus",
+    "Contact": "Yhteystiedot",
+    "aboutMeContent": "Osaava ohjelmistosuunnittelija 7 vuoden kokemuksella. Olen kehittänyt useita palveluita alusta saakka asiakkaiden tarpeisiin sekä ollut uudistamassa vanhempia järjestelmiä. Hallitsen useampia teknologioita ja omaksun myös uudet nopeasti. Nautin työssäni erityyppisten haasteiden ratkaisemisesta.",
+    "workExperience": {
+        "header": {
+            "EasyOpp": "Senior Software Developer, EasyOpp",
+            "Adalia": "Software Developer, Adalia Oy",
+            "Other": "Other"
+        },
+        "content": {
+            "EasyOpp": "Tuotekehitystiimissä toiminnanohjausjärjestelmän kehitys- ja suunnittelutyö. Uuden mobiilikäyttöliittymän (ReactJS + TypeScript) kehitys alusta saakka, jota asiakasyritystemme työntekijät käyttävät mm. työajan kellottamiseen. Muita tutuksi tulleita teknologioita ovat mm. .NET, MSSQL ja Azure.",
+            "Adalia": "Pilvipohjaisten palvelujen suunnittelu ja toteutus erilaisissa asiakasprojekteissa sekä omien tuotteiden parissa. Yleisimpinä teknologioina Ruby on Rails, React, PostgreSQL ja AWS.",
+            "Other": "Lisäksi aiempaa työkokemusta mm. vanginvartijana, varastotyöntekijänä ja kouluavustajana."
+        }
+    },
+    "education": {
+        "header": {
+            "Tuni": "Tampereen yliopisto / TTY",
+            "Järvenpään lukio": "Järvenpään lukio"
+        },
+        "content": {
+            "Tuni": "Tietotekniikan diplomi-insinööri",
+            "Järvenpään lukio": "Ylioppilas"
+        },
+        "subcontent": {
+            "Tuni": "Ohjelmistotuotanto <br/> 2012-2019"
+        }
+    }
+}

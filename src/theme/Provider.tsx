@@ -1,8 +1,9 @@
 import { ThemeProvider, createTheme, responsiveFontSizes } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import { createContext, useMemo, useState } from "react";
+import { createContext, useMemo } from "react";
 import { PaletteMode } from "@mui/material";
 import { getPalette, themeConfig } from "./theme.ts";
+import { useLocalStorage } from "usehooks-ts";
 
 export const ColorModeContext = createContext({ toggleColorMode: () => {} });
 
@@ -11,7 +12,7 @@ interface Props {
 }
 
 const Provider = ({ children }: Props) => {
-    const [mode, setMode] = useState<PaletteMode>("dark");
+    const [mode, setMode] = useLocalStorage<PaletteMode>("color-mode", "dark");
 
     const colorMode = useMemo(
         () => ({
