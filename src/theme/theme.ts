@@ -1,11 +1,6 @@
-import { ThemeProvider, createTheme, responsiveFontSizes } from "@mui/material/styles";
-import CssBaseline from "@mui/material/CssBaseline";
-import "./i18n.ts";
-import Router from "./Router.tsx";
-import { createContext, useMemo, useState } from "react";
 import { PaletteMode, ThemeOptions } from "@mui/material";
 
-const themeConfig: ThemeOptions = {
+export const themeConfig: ThemeOptions = {
     components: {
         MuiTypography: {
             defaultProps: {
@@ -15,6 +10,15 @@ const themeConfig: ThemeOptions = {
         MuiListItemText: {
             defaultProps: {
                 primaryTypographyProps: { textAlign: "initial" },
+            },
+        },
+        MuiIconButton: {
+            styleOverrides: {
+                root: {
+                    "&:hover": {
+                        backgroundColor: "rgba(255, 255, 255, 0.1)",
+                    },
+                },
             },
         },
     },
@@ -35,7 +39,7 @@ const themeConfig: ThemeOptions = {
     },
 };
 
-const getDesignTokens = (mode: PaletteMode) => ({
+export const getPalette = (mode: PaletteMode) => ({
     palette: {
         mode,
         secondary: {
@@ -63,32 +67,3 @@ const getDesignTokens = (mode: PaletteMode) => ({
               }),
     },
 });
-
-export const ColorModeContext = createContext({ toggleColorMode: () => {} });
-
-const Provider = () => {
-    const [mode, setMode] = useState<PaletteMode>("dark");
-    const colorMode = useMemo(
-        () => ({
-            // The dark mode switch would invoke this method
-            toggleColorMode: () => {
-                setMode((prevMode: PaletteMode) => (prevMode === "light" ? "dark" : "light"));
-            },
-        }),
-        []
-    );
-
-    // Update the theme only if the mode changes
-    const theme = useMemo(() => responsiveFontSizes(createTheme({ ...themeConfig, ...getDesignTokens(mode) })), [mode]);
-
-    return (
-        <ColorModeContext.Provider value={colorMode}>
-            <ThemeProvider theme={theme}>
-                <CssBaseline />
-                <Router />
-            </ThemeProvider>
-        </ColorModeContext.Provider>
-    );
-};
-
-export default Provider;

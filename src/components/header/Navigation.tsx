@@ -1,5 +1,3 @@
-import Box from "@mui/material/Box";
-import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
@@ -16,9 +14,8 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { OverridableComponent } from "@mui/material/OverridableComponent";
 import { SvgIconTypeMap, SxProps } from "@mui/material";
-import MobileDrawer from "../common/MobileDrawer";
-import { useState } from "react";
 import { useCurrentPath } from "../../hooks";
+import MobileMenu from "../common/MobileMenu";
 
 interface HeaderItem {
     path: string;
@@ -62,52 +59,34 @@ function NavigationTabs() {
 }
 export default NavigationTabs;
 
-interface Props {
+interface MobileNavigationMenuProps {
+    open: boolean;
+    setOpen: (open: boolean) => void;
     sx?: SxProps;
 }
 
-export const MobileNavigationMenu = ({ sx }: Props) => {
-    const [navMenuOpen, setNavMenuOpen] = useState(false);
+export const MobileNavigationMenu = ({ open, setOpen, sx }: MobileNavigationMenuProps) => {
     const { t } = useTranslation();
     const navigate = useNavigate();
     const currentPath = useCurrentPath();
 
-    const toggleNavMenu = () => {
-        setNavMenuOpen(!navMenuOpen);
-    };
-
-    const handleCloseNavMenu = () => {
-        setNavMenuOpen(false);
-    };
-
     const handleNavItemClick = (path: string) => {
-        handleCloseNavMenu();
+        setOpen(false);
         navigate(path);
     };
 
     return (
-        <>
-            <Box sx={{ display: { xs: "flex", md: "none" }, ...sx }}>
-                <IconButton size="large" onClick={toggleNavMenu} color="inherit">
-                    <MenuIcon />
-                </IconButton>
-            </Box>
-            <MobileDrawer anchor="top" open={navMenuOpen} onClose={handleCloseNavMenu}>
-                <List>
-                    {pages.map(({ path, label, Icon }) => (
-                        <ListItemButton
-                            key={path}
-                            selected={currentPath === path}
-                            onClick={() => handleNavItemClick(path)}
-                        >
-                            <ListItemIcon>
-                                <Icon sx={{ color: "text.primary" }} />
-                            </ListItemIcon>
-                            <ListItemText>{t(label)}</ListItemText>
-                        </ListItemButton>
-                    ))}
-                </List>
-            </MobileDrawer>
-        </>
+        <MobileMenu open={open} setOpen={setOpen} Icon={MenuIcon} anchor="top" sx={sx}>
+            <List>
+                {pages.map(({ path, label, Icon }) => (
+                    <ListItemButton key={path} selected={currentPath === path} onClick={() => handleNavItemClick(path)}>
+                        <ListItemIcon>
+                            <Icon sx={{ color: "text.primary" }} />
+                        </ListItemIcon>
+                        <ListItemText>{t(label)}</ListItemText>
+                    </ListItemButton>
+                ))}
+            </List>
+        </MobileMenu>
     );
 };

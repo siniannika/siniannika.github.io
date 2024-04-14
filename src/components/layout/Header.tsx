@@ -3,13 +3,27 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Container from "@mui/material/Container";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
 import { MyAvatar } from "../common/MyAvatar";
 import DarkModeToggle from "../header/DarkModeToggle";
-import LanguageSelector from "../header/LanguageSelector";
+import LanguageSelector, { MobileLanguageSelector } from "../header/LanguageSelector";
 import NavigationTabs, { MobileNavigationMenu } from "../header/Navigation";
-import MobileSettingsMenu from "../header/MobileSettingsMenu";
+import { useState } from "react";
+import SettingsIcon from "@mui/icons-material/Settings";
+import MobileMenu from "../common/MobileMenu";
+
+enum MenuType {
+    Nav,
+    Settings,
+}
 
 function Header() {
+    const [openMenu, setOpenMenu] = useState<MenuType | false>(false);
+
+    const handleCloseMenu = () => setOpenMenu(false);
+    const handleSetMenuOpen = (type: MenuType) => (open: boolean) => setOpenMenu(open ? type : false);
+
     return (
         <>
             <AppBar
@@ -25,14 +39,33 @@ function Header() {
                         <IconButton href="#" color="secondary" sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}>
                             <MyAvatar />
                         </IconButton>
-                        <MobileNavigationMenu sx={{ flexGrow: 1 }} />
+                        <MobileNavigationMenu
+                            open={openMenu === MenuType.Nav}
+                            setOpen={handleSetMenuOpen(MenuType.Nav)}
+                            sx={{ flexGrow: 1 }}
+                        />
                         <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-                            <IconButton href="#">
+                            <IconButton href="#" onClick={handleCloseMenu}>
                                 <MyAvatar />
                             </IconButton>
                         </Box>
                         <NavigationTabs />
-                        <MobileSettingsMenu sx={{ flexGrow: 0 }} />
+                        <MobileMenu
+                            anchor="right"
+                            open={openMenu === MenuType.Settings}
+                            setOpen={handleSetMenuOpen(MenuType.Settings)}
+                            Icon={SettingsIcon}
+                            sx={{ flexGrow: 0 }}
+                        >
+                            <List>
+                                <ListItem>
+                                    <DarkModeToggle showLabel sx={{ ml: 2 }} />
+                                </ListItem>
+                                <ListItem>
+                                    <MobileLanguageSelector />
+                                </ListItem>
+                            </List>
+                        </MobileMenu>
                         <Box sx={{ flexGrow: 0, display: { xs: "none", md: "block" } }}>
                             <DarkModeToggle />
                             <LanguageSelector />
