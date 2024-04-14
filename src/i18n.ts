@@ -19,6 +19,10 @@ const resources = {
             email: "roope.poyry1@gmail.com",
             linkedin: "linkedin.com/in/rpoyry",
             github: "github.com/rrobben",
+            mode: {
+                dark: "Dark mode",
+                light: "Light mode",
+            },
             workExperience: {
                 header: {
                     EasyOpp: "Senior Software Developer, EasyOpp",
