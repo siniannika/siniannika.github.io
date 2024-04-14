@@ -21,6 +21,7 @@ const Provider = ({ children }: Props) => {
                 setMode((prevMode: PaletteMode) => (prevMode === "light" ? "dark" : "light"));
             },
         }),
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         []
     );
 

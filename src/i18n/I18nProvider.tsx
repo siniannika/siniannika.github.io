@@ -20,6 +20,7 @@ const I18nProvider = (props: Props) => {
                 .then(() => setIsInitialized(true))
                 .catch(console.error);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     // Render context provider when the i18n instance has been initialized
@@ -43,6 +44,7 @@ const ContextProvider = ({ lng, setLng, children }: ContextProviderProps) => {
                 setLng(lng);
             },
         }),
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         [lng]
     );
 
@@ -50,6 +52,7 @@ const ContextProvider = ({ lng, setLng, children }: ContextProviderProps) => {
         if (lng !== i18n.language) {
             i18n.changeLanguage(lng);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [lng]);
 
     return <I18nContext.Provider value={i18nContext}>{children}</I18nContext.Provider>;
