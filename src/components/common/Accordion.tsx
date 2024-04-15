@@ -5,6 +5,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Typography } from "@mui/material";
 import { useState } from "react";
 import { styled } from "@mui/material/styles";
+import { useIsMobile } from "../../hooks";
 
 const StyledAccordion = styled((props: AccordionProps) => <Accordion disableGutters elevation={0} square {...props} />)(
     ({ theme }) => ({
@@ -39,7 +40,9 @@ interface Props {
 }
 
 const AccordionGroup = ({ items }: Props) => {
-    const [expanded, setExpanded] = useState<string | false>(items[0]?.header);
+    const isMobile = useIsMobile();
+    // Don't expand by default in mobile to allow better overview of contents.
+    const [expanded, setExpanded] = useState<string | false>(isMobile ? false : items[0]?.header);
 
     const handleChange = (panel: string) => (_: React.SyntheticEvent, newExpanded: boolean) => {
         setExpanded(newExpanded ? panel : false);
