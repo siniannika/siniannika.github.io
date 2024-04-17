@@ -1,4 +1,4 @@
-import { PaletteMode, ThemeOptions } from "@mui/material";
+import { PaletteMode, Theme, ThemeOptions, responsiveFontSizes } from "@mui/material";
 
 export const themeConfig: ThemeOptions = {
     components: {
@@ -67,3 +67,13 @@ export const getPalette = (mode: PaletteMode) => ({
               }),
     },
 });
+
+export const getResponsiveFontSizes = (theme: Theme) => {
+    const responsiveTheme = responsiveFontSizes(theme);
+
+    responsiveTheme.typography.body1[theme.breakpoints.down("sm")] = {
+        fontSize: "0.85rem",
+    };
+
+    return responsiveTheme;
+};
