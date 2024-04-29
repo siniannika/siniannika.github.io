@@ -4,14 +4,14 @@ import { useLocalStorage } from "usehooks-ts";
 import { initI18n } from "./i18n";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export const I18nContext = createContext({ language: "en", changeLanguage: (_lng: string) => {} });
+export const I18nContext = createContext({ language: "fi", changeLanguage: (_lng: string) => {} });
 
 interface Props {
     children: JSX.Element | JSX.Element[];
 }
 
 const I18nProvider = (props: Props) => {
-    const [lng, setLng] = useLocalStorage("lng", "en");
+    const [lng, setLng] = useLocalStorage("lng", "fi");
     const [isInitialized, setIsInitialized] = useState<boolean>(false);
 
     useEffect(() => {

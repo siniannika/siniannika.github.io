@@ -7,13 +7,13 @@ const Profile = () => {
     const { t } = useTranslation();
 
     return (
-        <Layout header={t("Name")} subheader={t("JobTitle")}>
+        <Layout header="">
             <CenteredBox sx={{ mb: 3 }}>
                 <MyAvatar size="lg" />
             </CenteredBox>
             <LayoutSubheader text={t("Profile")} />
-            <Typography variant="body1">
-                {t("aboutMeContent")}
+            <Typography variant="body1" textAlign="justify" sx={{ whiteSpace: "pre-wrap" }}>
+                {t("aboutMeContent").replace(/<br\/>/g, "\n")}
             </Typography>
         </Layout>
     );

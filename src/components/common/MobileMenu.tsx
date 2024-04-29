@@ -24,7 +24,7 @@ function MobileMenu({ anchor, open, setOpen, Icon, children, sx }: Props) {
     return (
         <>
             <Box sx={{ display: { xs: "block", md: "none" }, ...sx }}>
-                <IconButton size="large" onClick={toggleMenuOpen} color="inherit">
+                <IconButton size="large" onClick={toggleMenuOpen} color="secondary">
                     <Icon />
                 </IconButton>
             </Box>

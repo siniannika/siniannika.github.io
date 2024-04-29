@@ -18,7 +18,7 @@ interface Props {
 }
 
 const Layout = ({ children, header, subheader, Icon }: Props) => (
-    <Container style={containerStyle} maxWidth="md">
+    <Container style={containerStyle} maxWidth="sm">
         <LayoutHeader text={header} Icon={Icon} />
         {subheader ? <LayoutSubheader text={subheader} /> : null}
         {children}

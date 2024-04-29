@@ -25,9 +25,9 @@ interface HeaderItem {
 
 const pages: HeaderItem[] = [
     { path: "", label: "Profile", Icon: AccountCircleIcon },
-    { path: "experience", label: "Experience", Icon: WorkIcon },
-    { path: "education", label: "Education", Icon: SchoolIcon },
-    { path: "tech", label: "Technologies", Icon: TerminalIcon },
+    // { path: "experience", label: "Experience", Icon: WorkIcon },
+    // { path: "education", label: "Education", Icon: SchoolIcon },
+    // { path: "tech", label: "Technologies", Icon: TerminalIcon },
     { path: "contact", label: "Contact", Icon: AlternateEmailIcon },
 ];
 

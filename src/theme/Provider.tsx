@@ -12,7 +12,7 @@ interface Props {
 }
 
 const Provider = ({ children }: Props) => {
-    const [mode, setMode] = useLocalStorage<PaletteMode>("color-mode", "dark");
+    const [mode, setMode] = useLocalStorage<PaletteMode>("color-mode", "light");
 
     const colorMode = useMemo(
         () => ({

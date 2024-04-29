@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 import Layout, { CenteredBox } from "../layout/Layout";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GithubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import { OverridableComponent } from "@mui/material/OverridableComponent";
 import { SvgIconTypeMap } from "@mui/material";
 
@@ -19,9 +19,9 @@ interface IconListItem {
 }
 
 const contacts: IconListItem[] = [
-    { Icon: EmailIcon, text: "email", href: "mailto:roope.poyry1@gmail.com" },
-    { Icon: LinkedInIcon, text: "linkedin", href: "https://www.linkedin.com/in/rpoyry/" },
-    { Icon: GithubIcon, text: "github", href: "https://github.com/rrobben" },
+    { Icon: EmailIcon, text: "email", href: "mailto:sini.a.jokinen@gmail.com" },
+    { Icon: LinkedInIcon, text: "linkedin", href: "https://www.linkedin.com/in/sinipoyry" },
+    { Icon: InstagramIcon, text: "instagram", href: "https://www.instagram.com/bysiniiannika" },
 ];
 
 const Contact = () => {
