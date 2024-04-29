@@ -84,27 +84,11 @@ export const getPalette = (mode: PaletteMode) => ({
         },
         background: {
             icon: "#b6e3e3",
+            paper: "#fff",
         },
         text: {
             primary: "#7c9d9d",
         },
-        // ...(mode === "light"
-        //     ? {
-        //           text: {
-        //               primary: "#27466b",
-        //           },
-        //           background: {
-        //               paper: "#eceff1",
-        //               icon: "#27466b",
-        //           },
-        //       }
-        //     : {
-        //           background: {
-        //               paper: "#101720",
-        //               default: "#101720",
-        //               icon: "rgba(255, 255, 255, 0.7)",
-        //           },
-        //       }),
     },
 });
 

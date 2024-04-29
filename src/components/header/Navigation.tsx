@@ -6,9 +6,6 @@ import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import MenuIcon from "@mui/icons-material/Menu";
-import TerminalIcon from "@mui/icons-material/Terminal";
-import WorkIcon from "@mui/icons-material/Work";
-import SchoolIcon from "@mui/icons-material/School";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
@@ -46,13 +43,7 @@ function NavigationTabs() {
             }}
         >
             {pages.map((page) => (
-                <Tab
-                    key={page.path}
-                    value={page.path}
-                    label={t(page.label)}
-                    href={`#${page.path}`}
-                    sx={{ color: "white" }}
-                />
+                <Tab key={page.path} value={page.path} label={t(page.label)} href={`#${page.path}`} sx={{ color: "white" }} />
             ))}
         </Tabs>
     );
