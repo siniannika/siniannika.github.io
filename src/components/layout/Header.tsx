@@ -23,8 +23,6 @@ function Header() {
             <AppBar
                 position="sticky"
                 sx={{
-                    // backgroundColor: (theme) =>
-                    //     theme.palette.mode === "dark" ? theme.palette.background.paper : "#27384c",
                     zIndex: (theme) => theme.zIndex.drawer + 1,
                 }}
             >

@@ -1,8 +1,9 @@
 import { useLocation } from "react-router-dom";
 
-const useCurrentPath = () => {
+const useCurrentPath = (topLevel = false) => {
     const { pathname } = useLocation();
-    return pathname.replace("/", "");
+    const path = pathname.replace("/", "");
+    return topLevel ? path.split("/")[0] : path;
 };
 
 export default useCurrentPath;

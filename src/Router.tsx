@@ -1,10 +1,9 @@
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import App from "./components/layout/App.tsx";
 import Profile from "./components/views/Profile.tsx";
-import Technologies from "./components/views/Technologies.tsx";
-import Experience from "./components/views/Experience.tsx";
-import Education from "./components/views/Education.tsx";
+import Portfolio from "./components/views/Portfolio.tsx";
 import Contact from "./components/views/Contact.tsx";
+import GraphicDesign from "./components/views/GraphicDesign.tsx";
 
 const router = createHashRouter([
     {
@@ -16,16 +15,11 @@ const router = createHashRouter([
                 element: <Profile />,
             },
             {
-                path: "experience",
-                element: <Experience />,
-            },
-            {
-                path: "education",
-                element: <Education />,
-            },
-            {
-                path: "tech",
-                element: <Technologies />,
+                path: "portfolio",
+                children: [
+                    { index: true, element: <Portfolio /> },
+                    { path: "graphic_design", element: <GraphicDesign /> },
+                ],
             },
             {
                 path: "contact",

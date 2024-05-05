@@ -7,6 +7,7 @@ import Tabs from "@mui/material/Tabs";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import MenuIcon from "@mui/icons-material/Menu";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { OverridableComponent } from "@mui/material/OverridableComponent";
@@ -22,21 +23,19 @@ interface HeaderItem {
 
 const pages: HeaderItem[] = [
     { path: "", label: "Profile", Icon: AccountCircleIcon },
-    // { path: "experience", label: "Experience", Icon: WorkIcon },
-    // { path: "education", label: "Education", Icon: SchoolIcon },
-    // { path: "tech", label: "Technologies", Icon: TerminalIcon },
+    { path: "portfolio", label: "Portfolio", Icon: BusinessCenterIcon },
     { path: "contact", label: "Contact", Icon: AlternateEmailIcon },
 ];
 
 function NavigationTabs() {
     const { t } = useTranslation();
-    const currentPath = useCurrentPath();
+    const currentPath = useCurrentPath(true);
 
     return (
         <Tabs
             textColor="secondary"
             indicatorColor="secondary"
-            value={currentPath}
+            value={currentPath.split("/")[0]}
             sx={{
                 flexGrow: 1,
                 display: { xs: "none", md: "flex" },
@@ -59,7 +58,7 @@ interface MobileNavigationMenuProps {
 export const MobileNavigationMenu = ({ open, setOpen, sx }: MobileNavigationMenuProps) => {
     const { t } = useTranslation();
     const navigate = useNavigate();
-    const currentPath = useCurrentPath();
+    const currentPath = useCurrentPath(true);
 
     const handleNavItemClick = (path: string) => {
         setOpen(false);
