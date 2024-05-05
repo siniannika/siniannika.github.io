@@ -1,9 +1,11 @@
-import { SvgIconTypeMap, SxProps, styled } from "@mui/material";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { IconButton, SvgIconTypeMap, SxProps, styled } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import { OverridableComponent } from "@mui/material/OverridableComponent";
 import Typography from "@mui/material/Typography";
+import { useNavigate } from "react-router-dom";
 
 const containerStyle = {
     paddingTop: "2rem",
@@ -15,12 +17,13 @@ interface Props {
     header: string;
     subheader?: string;
     Icon?: OverridableComponent<SvgIconTypeMap>;
+    backButton?: boolean;
 }
 
-const Layout = ({ children, header, subheader, Icon }: Props) => (
+const Layout = ({ children, header, subheader, Icon, backButton }: Props) => (
     <Container maxWidth={false} className="main-container">
         <Container style={containerStyle} maxWidth="sm">
-            <LayoutHeader text={header} Icon={Icon} />
+            <LayoutHeader text={header} Icon={Icon} backButton={backButton} />
             {subheader ? <LayoutSubheader text={subheader} /> : null}
             {children}
         </Container>
@@ -32,6 +35,7 @@ export default Layout;
 interface HeaderProps {
     text: string;
     Icon?: OverridableComponent<SvgIconTypeMap>;
+    backButton?: boolean;
 }
 
 const StyledTypography = styled(Typography)(({ theme }) => ({
@@ -46,16 +50,25 @@ const StyledTypography = styled(Typography)(({ theme }) => ({
     },
 }));
 
-export const LayoutHeader = ({ text, Icon }: HeaderProps) => (
-    <StyledTypography variant="h4">
-        {Icon ? (
-            <Avatar sx={{ mr: 2, backgroundColor: "background.icon" }}>
-                <Icon />
-            </Avatar>
-        ) : null}
-        {text}
-    </StyledTypography>
-);
+export const LayoutHeader = ({ text, Icon, backButton = false }: HeaderProps) => {
+    const navigate = useNavigate();
+
+    return (
+        <StyledTypography variant="h4">
+            {backButton ? (
+                <IconButton color="secondary" sx={{ mr: 2, backgroundColor: "background.icon" }} onClick={() => navigate("../")}>
+                    <ArrowBackIcon />
+                </IconButton>
+            ) : null}
+            {Icon ? (
+                <Avatar sx={{ mr: 2, backgroundColor: "background.icon" }}>
+                    <Icon />
+                </Avatar>
+            ) : null}
+            {text}
+        </StyledTypography>
+    );
+};
 
 export const LayoutSubheader = ({ text }: HeaderProps) => (
     <Typography variant="h5" mb={3}>

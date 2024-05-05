@@ -3,6 +3,7 @@ import Layout from "../layout/Layout";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import { ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import { PortfolioSectionPath } from "../../constants/enums";
 
 interface ImgItem {
     img: string;
@@ -10,15 +11,14 @@ interface ImgItem {
 }
 
 const items: ImgItem[] = [
-    { img: "Graafinen suunnittelu", path: "graphic_design" },
-    { img: "Kalligrafia", path: "calligraphy" },
-    { img: "Muotoilupiirtäminen", path: "design_drawing" },
-    { img: "Liikkuva kuva", path: "video" },
-    { img: "Tuotemuotoilu", path: "product_design" },
-    { img: "UI-suunnittelu", path: "ui_design" },
-    { img: "Tapahtumamuotoilu", path: "event_design" },
-    { img: "Visuaalinen ilme ja brändäys", path: "branding" },
-    { img: "Valokuvaus", path: "photography" },
+    { img: "Graafinen suunnittelu", path: PortfolioSectionPath.GraphicDesign },
+    { img: "Kalligrafia", path: PortfolioSectionPath.Calligraphy },
+    { img: "Muotoilupiirtäminen", path: PortfolioSectionPath.DesignDrawing },
+    { img: "Tuotemuotoilu", path: PortfolioSectionPath.ProductDesign },
+    { img: "UI-suunnittelu", path: PortfolioSectionPath.UIDesign },
+    { img: "Tapahtumamuotoilu", path: PortfolioSectionPath.EventDesign },
+    { img: "Visuaalinen ilme ja brändäys", path: PortfolioSectionPath.Branding },
+    { img: "Valokuvaus", path: PortfolioSectionPath.Photography },
 ];
 
 const Portfolio = () => {
@@ -33,7 +33,7 @@ const Portfolio = () => {
         <Layout header={t("Portfolio")} Icon={BusinessCenterIcon}>
             <ImageList cols={3}>
                 {items.map(({ img, path }) => (
-                    <ImageListItem key={img} onClick={() => handleItemClick(path)}>
+                    <ImageListItem key={img} sx={{ cursor: "pointer" }} onClick={() => handleItemClick(path)}>
                         <img src={`cover_images/${img}.png`} alt={img} />
                         <ImageListItemBar title={img} position="below" sx={{ textAlign: "center" }} />
                     </ImageListItem>

@@ -20,5 +20,12 @@ body {
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
-  }
-  
+}
+
+
+video.img-list-video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}

@@ -3,7 +3,7 @@ import App from "./components/layout/App.tsx";
 import Profile from "./components/views/Profile.tsx";
 import Portfolio from "./components/views/Portfolio.tsx";
 import Contact from "./components/views/Contact.tsx";
-import GraphicDesign from "./components/views/GraphicDesign.tsx";
+import PortfolioSection from "./components/views/PortfolioSection.tsx";
 
 const router = createHashRouter([
     {
@@ -18,7 +18,7 @@ const router = createHashRouter([
                 path: "portfolio",
                 children: [
                     { index: true, element: <Portfolio /> },
-                    { path: "graphic_design", element: <GraphicDesign /> },
+                    { path: ":section", element: <PortfolioSection /> },
                 ],
             },
             {
