@@ -6,6 +6,7 @@ import Container from "@mui/material/Container";
 import { OverridableComponent } from "@mui/material/OverridableComponent";
 import Typography from "@mui/material/Typography";
 import { useNavigate } from "react-router-dom";
+import background from "../../images/background.jpg";
 
 const containerStyle = {
     paddingTop: "2rem",
@@ -20,14 +21,33 @@ interface Props {
     backButton?: boolean;
 }
 
+const MainContainer = styled(Container)(() => ({
+    position: "relative",
+    minHeight: "calc(100vh - 64px)",
+    "&::before": {
+        content: '""',
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        opacity: 0.3,
+        background: `url(${background})`,
+        backgroundPosition: "bottom",
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
+        zIndex: -1,
+    },
+}));
+
 const Layout = ({ children, header, subheader, Icon, backButton }: Props) => (
-    <Container maxWidth={false} className="main-container">
+    <MainContainer maxWidth={false}>
         <Container style={containerStyle} maxWidth="sm">
             <LayoutHeader text={header} Icon={Icon} backButton={backButton} />
             {subheader ? <LayoutSubheader text={subheader} /> : null}
             {children}
         </Container>
-    </Container>
+    </MainContainer>
 );
 
 export default Layout;
