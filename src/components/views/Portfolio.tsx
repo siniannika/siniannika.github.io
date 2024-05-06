@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
 import Layout from "../layout/Layout";
-import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import { ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { PortfolioSectionPath } from "../../constants/enums";
+import { useIsMobile } from "../../hooks";
 
 interface ImgItem {
     img: string;
@@ -29,9 +29,11 @@ const Portfolio = () => {
         navigate(path);
     };
 
+    const isMobile = useIsMobile();
+
     return (
-        <Layout header={t("Portfolio")} Icon={BusinessCenterIcon}>
-            <ImageList cols={3}>
+        <Layout header={t("Portfolio")}>
+            <ImageList cols={isMobile ? 1 : 3}>
                 {items.map(({ img, path }) => (
                     <ImageListItem key={img} sx={{ cursor: "pointer" }} onClick={() => handleItemClick(path)}>
                         <img src={`cover_images/${img}.png`} alt={img} />

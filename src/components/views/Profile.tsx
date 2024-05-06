@@ -1,18 +1,14 @@
 import Typography from "@mui/material/Typography";
-import { MyAvatar } from "../common/MyAvatar";
 import { useTranslation } from "react-i18next";
-import Layout, { CenteredBox, LayoutSubheader } from "../layout/Layout";
+import Layout from "../layout/Layout";
 
 const Profile = () => {
     const { t } = useTranslation();
 
     return (
-        <Layout header="">
-            <CenteredBox sx={{ mb: 3 }}>
-                <MyAvatar size="lg" />
-            </CenteredBox>
-            <LayoutSubheader text={t("Profile")} />
-            <Typography variant="body1" textAlign="justify" sx={{ whiteSpace: "pre-wrap" }}>
+        <Layout>
+            <img src="profile_banner.png" alt="Profiili" width="100%" />
+            <Typography variant="body1" textAlign="justify" sx={{ mt: 2, whiteSpace: "pre-wrap" }}>
                 {t("aboutMeContent").replace(/<br\/>/g, "\n")}
             </Typography>
         </Layout>

@@ -2,7 +2,7 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { IconButton, SvgIconTypeMap, SxProps, styled } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
+import Container, { ContainerOwnProps } from "@mui/material/Container";
 import { OverridableComponent } from "@mui/material/OverridableComponent";
 import Typography from "@mui/material/Typography";
 import { useNavigate } from "react-router-dom";
@@ -15,10 +15,11 @@ const containerStyle = {
 
 interface Props {
     children: JSX.Element | JSX.Element[];
-    header: string;
+    header?: string;
     subheader?: string;
     Icon?: OverridableComponent<SvgIconTypeMap>;
     backButton?: boolean;
+    maxWidth?: ContainerOwnProps["maxWidth"] | false;
 }
 
 const MainContainer = styled(Container)(() => ({
@@ -40,9 +41,9 @@ const MainContainer = styled(Container)(() => ({
     },
 }));
 
-const Layout = ({ children, header, subheader, Icon, backButton }: Props) => (
+const Layout = ({ children, header, subheader, Icon, backButton, maxWidth = "sm" }: Props) => (
     <MainContainer maxWidth={false}>
-        <Container style={containerStyle} maxWidth="sm">
+        <Container style={containerStyle} maxWidth={maxWidth}>
             <LayoutHeader text={header} Icon={Icon} backButton={backButton} />
             {subheader ? <LayoutSubheader text={subheader} /> : null}
             {children}
@@ -53,7 +54,7 @@ const Layout = ({ children, header, subheader, Icon, backButton }: Props) => (
 export default Layout;
 
 interface HeaderProps {
-    text: string;
+    text?: string;
     Icon?: OverridableComponent<SvgIconTypeMap>;
     backButton?: boolean;
 }
@@ -70,15 +71,27 @@ const StyledTypography = styled(Typography)(({ theme }) => ({
     },
 }));
 
+const StyledIconButton = styled(IconButton)(({theme}) => ({
+    marginRight: theme.spacing(2),
+    color: theme.palette.common.white,
+    backgroundColor: theme.palette.primary.main,
+    "&:hover": {
+        backgroundColor: theme.palette.primary.dark,
+    },
+    "&:active": {
+        backgroundColor: theme.palette.primary.dark,
+    }
+}))
+
 export const LayoutHeader = ({ text, Icon, backButton = false }: HeaderProps) => {
     const navigate = useNavigate();
 
-    return (
+    return text ? (
         <StyledTypography variant="h4">
             {backButton ? (
-                <IconButton color="secondary" sx={{ mr: 2, backgroundColor: "background.icon" }} onClick={() => navigate("../")}>
+                <StyledIconButton onClick={() => navigate("../")}>
                     <ArrowBackIcon />
-                </IconButton>
+                </StyledIconButton>
             ) : null}
             {Icon ? (
                 <Avatar sx={{ mr: 2, backgroundColor: "background.icon" }}>
@@ -87,7 +100,7 @@ export const LayoutHeader = ({ text, Icon, backButton = false }: HeaderProps) =>
             ) : null}
             {text}
         </StyledTypography>
-    );
+    ) : null;
 };
 
 export const LayoutSubheader = ({ text }: HeaderProps) => (

@@ -8,6 +8,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import MenuIcon from "@mui/icons-material/Menu";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
+import WorkIcon from "@mui/icons-material/Work";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { OverridableComponent } from "@mui/material/OverridableComponent";
@@ -23,6 +24,7 @@ interface HeaderItem {
 
 const pages: HeaderItem[] = [
     { path: "", label: "Profile", Icon: AccountCircleIcon },
+    { path: "experience", label: "Experience", Icon: WorkIcon },
     { path: "portfolio", label: "Portfolio", Icon: BusinessCenterIcon },
     { path: "contact", label: "Contact", Icon: AlternateEmailIcon },
 ];
