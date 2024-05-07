@@ -101,16 +101,16 @@ export const getSection = (section: string | undefined): Section => {
             return {
                 title: "Branding",
                 items: [
-                    { img: "Sini", group: 1, fullWidth: true },
-                    { img: "Sini2", group: 1, fileExt: "jpg" },
-                    { img: "Sini3", group: 1, fileExt: "jpg" },
-                    { img: "Sini4", group: 1, fileExt: "jpg" },
-                    { img: "Elisa2", group: 2, fullWidth: true },
-                    { img: "Häät1", group: 2 },
-                    { img: "Häät2", group: 2 },
-                    { img: "Häät3", group: 2 },
-                    { img: "Häät4", group: 2 },
-                    { img: "Häät5", group: 2 },
+                    { img: "Sini", group: 1, fullWidth: true, text: "Sini" },
+                    { img: "Sini2", group: 1, fileExt: "jpg", text: "Sini" },
+                    { img: "Sini3", group: 1, fileExt: "jpg", text: "Sini" },
+                    { img: "Sini4", group: 1, fileExt: "jpg", text: "Sini" },
+                    { img: "Elisa2", group: 2, fullWidth: true, text: "Elisa" },
+                    { img: "Häät1", group: 2, text: "Häät" },
+                    { img: "Häät2", group: 2, text: "Häät" },
+                    { img: "Häät3", group: 2, text: "Häät" },
+                    { img: "Häät4", group: 2, text: "Häät" },
+                    { img: "Häät5", group: 2, text: "Häät" },
                 ],
             };
         case PortfolioSectionPath.Photography:
