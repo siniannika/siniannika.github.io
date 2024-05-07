@@ -5,6 +5,7 @@ import { Outlet, useNavigate, useParams } from "react-router-dom";
 import { useIsMobile } from "../../hooks";
 import { StyledImageListItem } from "./Portfolio";
 import { ImgItem, getSection } from "../../constants/section";
+import React, { useMemo } from "react";
 
 const PortfolioSection = () => {
     const { t } = useTranslation();
@@ -17,23 +18,29 @@ const PortfolioSection = () => {
         navigate(path ?? "");
     };
 
+    const groups = useMemo(() => [...new Set(items.map((i) => i.group ?? 0))].sort(), [items]);
+
     return (
         <>
             <Layout header={t(title)} backButton>
-                <ImageList variant="masonry" cols={1} sx={{ overflowY: "visible" }} gap={10}>
-                    {items
-                        .filter((i) => i.fullWidth)
-                        .map((i) => (
-                            <ImageItem key={i.img ?? i.video} {...i} handleClick={handleItemClick} />
-                        ))}
-                </ImageList>
-                <ImageList variant="masonry" cols={isMobile ? 1 : 3} sx={{ overflowY: "visible" }} gap={10}>
-                    {items
-                        .filter((i) => !i.fullWidth)
-                        .map((i) => (
-                            <ImageItem key={i.img ?? i.video} {...i} handleClick={handleItemClick} />
-                        ))}
-                </ImageList>
+                {groups.map((g) => (
+                    <React.Fragment key={g}>
+                        <ImageList variant="masonry" cols={1} sx={{ overflowY: "visible" }} gap={10}>
+                            {items
+                                .filter((i) => i.fullWidth && (i.group ?? 0) === g)
+                                .map((i) => (
+                                    <ImageItem key={i.img ?? i.video} {...i} handleClick={handleItemClick} />
+                                ))}
+                        </ImageList>
+                        <ImageList variant="masonry" cols={isMobile ? 1 : 3} sx={{ overflowY: "visible" }} gap={10}>
+                            {items
+                                .filter((i) => !i.fullWidth && (i.group ?? 0) === g)
+                                .map((i) => (
+                                    <ImageItem key={i.img ?? i.video} {...i} handleClick={handleItemClick} />
+                                ))}
+                        </ImageList>
+                    </React.Fragment>
+                ))}
             </Layout>
             <Outlet />
         </>

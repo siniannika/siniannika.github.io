@@ -19,25 +19,27 @@
     "instagram": "instagram.com/bysiniiannika",
     "graphic_design": {
         "Postikortit": "Suloiset postikortit, joissa seikkailevat veikeät pandakaverit. Vastaanottajan hymy on taattu!",
-        "Keikkajulisteet": "Kuvitteelliset keikkajulisteet, joissa on leikitelty erilaisten muotojen ja typografian kanssa. Mockup mockupworld.com.",
+        "Keikkajulisteet": "Kuvitteelliset keikkajulisteet, joissa on leikitelty erilaisten muotojen ja typografian kanssa.",
+        "KeikkajulisteetMockup": "Kuvitteelliset keikkajulisteet, joissa on leikitelty erilaisten muotojen ja typografian kanssa. Mockup mockupworld.com.",
         "Osallisuus": "Koulutyönä toteutettu posteri, joka ilmentää osallisuutta ja myötäilee Mielitekomedia-hankkeen graafista ilmettä."
     },
     "product_design": {
         "Yöpöytä": "Suunnittelin ja mallinsin tämän RANGLE-yöpöydän keväällä 2023. Yöpöydässä on uniikki design, tilava laatikko, hylly pienille tavaroille sekä sisään upotetut led-valot, joiden kirkkautta voi säätää.",
         "Taukotila": "Suunnittelin ja mallinsin tämän KOTO-venyttelyalueen koulujen aulatiloihin syksyllä 2022. Venyttelyalue on tarpeiden mukaan muokattavissa. Sen katossa on eri korkeuksilla puolapuita, joissa voi tuntien väleissä venytellä selkää ja verrytellä jäseniään. Venyttelyalue on samalla mukava kokoontumispaikka, jossa voi vaihtaa kuulumisia.",
         "Käsidesi": "Mallinsin kauniin käsidesipurkin, jonka kaulaa koristaa puinen helminauha.",
-        "Lamppu": "Ryhmätyönä suunniteltu ja valmistettu lamppu koivuvanerista. Valokuvat Matti Konttila.",
+        "Lamppu": "Ryhmätyönä suunniteltu ja valmistettu lamppu koivuvanerista. Valokuva Matti Konttila.",
+        "LamppuTyökuva": "Tässä on valmistumassa ryhmätyönä toteutettu lamppu koivuvanerista. Valokuva Matti Konttila.",
         "Pandakalenteri": "Uniikki magneettinen kalenteri 3-vuotiaalle avuksi päivän kulun hahmottamiseen. Kalenteri koostuu yksittäisistä magneeteista ja sen voi koota haluamallaan tavalla, vaikka jääkaapin oveen yhdessä lapsen kanssa."
     },
     "calligraphy": {
         "Sini": "Kalligrafian Masterclass -kurssilla valmistui nämä upeat logot omaan käyttöön.",
-        "Elisa": "Kalligrafiaa olen hyödyntänyt myös asiakastöissä muun muassa logoon ja graafisiin elementteihin.",
+        "Elisa": "Kalligrafiaa olen hyödyntänyt myös asiakastöissä logoihin ja graafisiin elementteihin.",
         "Syntymäjulisteet": "Nämä nimitaulut valmistuivat Kalligrafian Masterclass -kurssilla. Mockup unblast.com."
     },
     "design_drawing": {
         "Eläimet": "Eläinaiheisia hiilityöluonnoksia.",
         "Tussikukka": "Tusseilla toteutettu kukkasommitelma.",
-        "Vesivärikukka": "Vesiväreillä ja tusseilla toteutettu kukkateos.",
+        "Vesivärikukka": "Vesiväreillä ja tusseilla toteutettu kukkataideteos.",
         "Orvokki": "Pirtsakka vastaväri akryylimaalaus orvokeista.",
         "Kukkayhdistelmä": "Vesivärein toteutettuja kukkaluonnoksia.",
         "Välineet": "Nämä työvälineet piirsin tussein.",
@@ -48,6 +50,7 @@
     },
     "event_design": {
         "Ompeluviikonloppu": "Suunnittelin ja toteutin ompeluharrastajille virkistysviikonlopun yhteistyössä Mäntän Luomisen Ihme -kangaskaupan kanssa. Markkinointimateriaalien lisäksi laadin projektille muun muassa budjetin, tehtävätaulukon, ohjelmarungon, ruokalistasuunnitelmat ja tarkan käsikirjoituksen.",
-        "Häät": "Toimin hääsuunnittelijana kesähäissä 2019. Vastuullani oli kaikki visuaalisesta ilmeestä ohjelmaan ja ruokailuihin. Kattauskuvan ottanut Susanne Mäntyvuo."
+        "HäätKattaus": "Toimin hääsuunnittelijana kesähäissä 2019. Vastuullani oli kaikki visuaalisesta ilmeestä ohjelmaan ja ruokailuihin. Valokuva Susanne Mäntyvuo.",
+        "Häät": "Toimin hääsuunnittelijana kesähäissä 2019. Vastuullani oli kaikki visuaalisesta ilmeestä ohjelmaan ja ruokailuihin."
     }
 }

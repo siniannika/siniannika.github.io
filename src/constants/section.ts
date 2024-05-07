@@ -8,6 +8,7 @@ export interface ImgItem {
     height?: string;
     maxHeight?: string;
     text?: string;
+    group?: number;
 }
 
 interface Section {
@@ -23,7 +24,7 @@ export const getSection = (section: string | undefined): Section => {
                 items: [
                     { img: "Postikortti1", text: "Postikortit" },
                     { img: "Postikortti4", text: "Postikortit" },
-                    { img: "Keikkajulisteet", fileExt: "jpg", text: "Keikkajulisteet" },
+                    { img: "Keikkajulisteet", fileExt: "jpg", text: "KeikkajulisteetMockup" },
                     { img: "Postikortti2", text: "Postikortit" },
                     { img: "Keikkajuliste1", fileExt: "jpg", text: "Keikkajulisteet" },
                     { img: "Osallisuus", text: "Osallisuus" },
@@ -74,7 +75,7 @@ export const getSection = (section: string | undefined): Section => {
                     { img: "Lamppu2", fileExt: "jpg", text: "Lamppu" },
                     { img: "Yöpöytä3", text: "Yöpöytä" },
                     { img: "Käsidesi", text: "Käsidesi" },
-                    { img: "Lamppu3", fileExt: "jpg", text: "Lamppu" },
+                    { img: "Lamppu3", fileExt: "jpg", text: "LamppuTyökuva" },
                 ],
             };
         case PortfolioSectionPath.UIDesign:
@@ -90,22 +91,26 @@ export const getSection = (section: string | undefined): Section => {
                 title: "EventDesign",
                 items: [
                     { img: "Ompelu1", text: "Ompeluviikonloppu" },
-                    { img: "Ompelu2", text: "Ompeluviikonloppu" },
                     { img: "Häät1", fileExt: "jpeg", text: "Häät" },
-                    { img: "Häät 2", fileExt: "jpg", text: "Häät" },
+                    { img: "Ompelu2", text: "Ompeluviikonloppu" },
+                    { img: "Häät 2", fileExt: "jpg", text: "HäätKattaus" },
+                    { img: "Ompelu3", text: "Ompeluviikonloppu" },
                 ],
             };
         case PortfolioSectionPath.Branding:
             return {
                 title: "Branding",
                 items: [
-                    { img: "Sini2", fullWidth: true },
-                    { img: "Elisa2", fullWidth: true },
-                    { img: "Häät1" },
-                    { img: "Häät2" },
-                    { img: "Häät3" },
-                    { img: "Häät4" },
-                    { img: "Häät5" },
+                    { img: "Sini", group: 1, fullWidth: true },
+                    { img: "Sini2", group: 1, fileExt: "jpg" },
+                    { img: "Sini3", group: 1, fileExt: "jpg" },
+                    { img: "Sini4", group: 1, fileExt: "jpg" },
+                    { img: "Elisa2", group: 2, fullWidth: true },
+                    { img: "Häät1", group: 2 },
+                    { img: "Häät2", group: 2 },
+                    { img: "Häät3", group: 2 },
+                    { img: "Häät4", group: 2 },
+                    { img: "Häät5", group: 2 },
                 ],
             };
         case PortfolioSectionPath.Photography:

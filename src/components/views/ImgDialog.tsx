@@ -12,7 +12,8 @@ import { styled } from "@mui/material";
 
 type StyledCardProps = CardProps & { maxHeight?: string };
 
-const StyledCard = styled((props: StyledCardProps) => <Card {...props} />)(({ maxHeight }) => ({
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const StyledCard = styled(({ maxHeight, ...props }: StyledCardProps) => <Card {...props} />)(({ maxHeight }) => ({
     overflow: "auto",
     "&  video": {
         objectFit: "cover",
