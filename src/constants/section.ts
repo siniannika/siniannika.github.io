@@ -6,6 +6,7 @@ export interface ImgItem {
     fileExt?: string;
     fullWidth?: boolean;
     height?: string;
+    maxHeight?: string;
     text?: string;
 }
 
@@ -24,10 +25,9 @@ export const getSection = (section: string | undefined): Section => {
                     { img: "Postikortti4", text: "Postikortit" },
                     { img: "Keikkajulisteet", fileExt: "jpg", text: "Keikkajulisteet" },
                     { img: "Postikortti2", text: "Postikortit" },
-                    { img: "Pandakalenteri" },
                     { img: "Keikkajuliste1", fileExt: "jpg", text: "Keikkajulisteet" },
-                    { img: "Postikortti3", text: "Postikortit" },
                     { img: "Osallisuus", text: "Osallisuus" },
+                    { img: "Postikortti3", text: "Postikortit" },
                     { img: "Keikkajuliste2", fileExt: "jpg", text: "Keikkajulisteet" },
                 ],
             };
@@ -68,6 +68,7 @@ export const getSection = (section: string | undefined): Section => {
                     { img: "Yöpöytä1", text: "Yöpöytä" },
                     { img: "Aulateos1", text: "Taukotila" },
                     { img: "Lamppu1", fileExt: "jpg", text: "Lamppu" },
+                    { video: "Pandakalenteri", fileExt: "mp4", text: "Pandakalenteri", maxHeight: "245px" },
                     { img: "Yöpöytä2", text: "Yöpöytä" },
                     { img: "Aulateos2", text: "Taukotila" },
                     { img: "Lamppu2", fileExt: "jpg", text: "Lamppu" },

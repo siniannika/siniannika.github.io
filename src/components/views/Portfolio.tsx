@@ -26,6 +26,9 @@ export const StyledImageListItem = styled(ImageListItem)(({ theme }) => ({
     "& > img:hover": {
         boxShadow: theme.shadows[4],
     },
+    "& > video:hover": {
+        boxShadow: theme.shadows[4],
+    },
 }));
 
 const Portfolio = () => {
