@@ -8,6 +8,15 @@ export const themeConfig: ThemeOptions = {
                 textAlign: "center",
             },
         },
+        MuiListItemButton: {
+            styleOverrides: {
+                root: {
+                    "&.Mui-selected": {
+                        backgroundColor: "rgba(182, 227, 227, 0.2)",
+                    },
+                },
+            },
+        },
         MuiListItemText: {
             defaultProps: {
                 primaryTypographyProps: { textAlign: "initial" },
@@ -27,6 +36,14 @@ export const themeConfig: ThemeOptions = {
                 root: {
                     fontFamily: "Dream Orphans",
                     letterSpacing: "1px",
+                },
+            },
+        },
+        MuiButton: {
+            styleOverrides: {
+                root: {
+                    fontFamily: "ivyora-display",
+                    textTransform: "capitalize"
                 },
             },
         },
@@ -75,6 +92,7 @@ export const getPalette = (mode: PaletteMode) => ({
             main: "#b6e3e3",
             ligth: "#dffdf8",
             dark: "#7c9d9d",
+            contrastText: "#fff",
         },
         secondary: {
             main: "#7c9d9d",

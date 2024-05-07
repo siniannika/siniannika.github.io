@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Layout from "../layout/Layout";
-import { ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
+import { ImageList, ImageListItem, ImageListItemBar, styled } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { PortfolioSectionPath } from "../../constants/enums";
 import { useIsMobile } from "../../hooks";
@@ -11,15 +11,22 @@ interface ImgItem {
 }
 
 const items: ImgItem[] = [
+    { img: "Tuotemuotoilu", path: PortfolioSectionPath.ProductDesign },
     { img: "Graafinen suunnittelu", path: PortfolioSectionPath.GraphicDesign },
+    { img: "Visuaalinen ilme ja brändäys", path: PortfolioSectionPath.Branding },
+    { img: "UI-suunnittelu", path: PortfolioSectionPath.UIDesign },
+    { img: "Valokuvaus", path: PortfolioSectionPath.Photography },
+    { img: "Tapahtumamuotoilu", path: PortfolioSectionPath.EventDesign },
     { img: "Kalligrafia", path: PortfolioSectionPath.Calligraphy },
     { img: "Muotoilupiirtäminen", path: PortfolioSectionPath.DesignDrawing },
-    { img: "Tuotemuotoilu", path: PortfolioSectionPath.ProductDesign },
-    { img: "UI-suunnittelu", path: PortfolioSectionPath.UIDesign },
-    { img: "Tapahtumamuotoilu", path: PortfolioSectionPath.EventDesign },
-    { img: "Visuaalinen ilme ja brändäys", path: PortfolioSectionPath.Branding },
-    { img: "Valokuvaus", path: PortfolioSectionPath.Photography },
 ];
+
+export const StyledImageListItem = styled(ImageListItem)(({ theme }) => ({
+    cursor: "pointer",
+    "& > img:hover": {
+        boxShadow: theme.shadows[4],
+    },
+}));
 
 const Portfolio = () => {
     const { t } = useTranslation();
@@ -33,12 +40,12 @@ const Portfolio = () => {
 
     return (
         <Layout header={t("Portfolio")}>
-            <ImageList cols={isMobile ? 1 : 3}>
+            <ImageList cols={isMobile ? 1 : 3} gap={10}>
                 {items.map(({ img, path }) => (
-                    <ImageListItem key={img} sx={{ cursor: "pointer" }} onClick={() => handleItemClick(path)}>
+                    <StyledImageListItem key={img} onClick={() => handleItemClick(path)}>
                         <img src={`cover_images/${img}.png`} alt={img} />
                         <ImageListItemBar title={img} position="below" sx={{ textAlign: "center" }} />
-                    </ImageListItem>
+                    </StyledImageListItem>
                 ))}
             </ImageList>
         </Layout>

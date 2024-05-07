@@ -1,4 +1,5 @@
 {
+    "Close": "Sulje",
     "Profile": "Profiili",
     "Portfolio": "Portfolio",
     "GraphicDesign": "Graafinen suunnittelu",
@@ -16,29 +17,37 @@
     "email": "sini.a.jokinen@gmail.com",
     "linkedin": "linkedin.com/in/sinipoyry",
     "instagram": "instagram.com/bysiniiannika",
-    "workExperience": {
-        "header": {
-            "EasyOpp": "Senior Software Developer, EasyOpp",
-            "Adalia": "Software Developer, Adalia Oy",
-            "Other": "Other"
-        },
-        "content": {
-            "EasyOpp": "Tuotekehitystiimissä toiminnanohjausjärjestelmän kehitys- ja suunnittelutyö. Kaksi olennaisinta sovellusta ovat mobiiliin suunnattu PWA, jota asiakasyritystemme työntekijät käyttävät työaikansa kellottamiseen, kirjaamiseen ja tarkasteluun. Ja hallinnallisiin toimintoihin suunnattu web-sovellus, joka sisältää mm. työajan hyväksyntään, palkkojen laskentaan ja siirtoon sekä näiden laskennan konfigurointiin liittyviä ominaisuuksia.<br /><br />Olin pääasiallisena kehittäjänä tekemässä alusta saakka uutta mobiilikäyttöliittymää (ReactJS + TypeScript). Vastuullani oli luoda pohja muulle kehitykselle sekä olennaisimpien toimintojen ja yleiskäyttöisten komponenttien toteutus. Näiden lisäksi katselmoin muiden tekemää koodia ja tein sovelluksen Azure-julkaisua varten vaadittavat infrastruktuurin konfiguroinnit.<br /><br />Olen ollut myös vastuussa palkanlaskentaprosessin uudistamisen suunnittelusta sekä tietomallin parannusten että käyttöliittymän liittyvien muutosten osalta, minkä tavoitteena on tehdä prossesista käyttäjälle helpompi ja selkeämpi. Tärkeänä osana suunnittelua on ollut huomioida, kuinka käyttöliittymäään ja tietomalliin liittyvät muutokset liittyvät toisiinsa, jotta ne voidaan ottaa huomioon toteutuksen alusta saakka.<br /><br />Senioridevaajan roolissa minulla on ollut mahdollisuus ohjata nuorempia kehittäjä ja jakaa tietoa sekä auttaa heitä erilaisten ongelmian ratkaisussa. Tästä olen saanut positiivista palautetta henkilöiltä, joita olen ohjannut.<br /><br />Teknologioista käytössä on ollut pääasiassa React + TypeScript, C# + .NET, MSSQL and Azure. Lisäksi olen ylläpitänyt olemassa olevia E2E-testejä, joissa käytössä on Robot Framework ja Playwright.",
-            "Adalia": "Pilvipohjaisten palvelujen suunnittelu ja toteutus erilaisissa asiakasprojekteissa sekä omien tuotteiden parissa. Yleisimpinä teknologioina Ruby on Rails, React, PostgreSQL ja AWS.",
-            "Other": "Lisäksi aiempaa työkokemusta mm. vanginvartijana, varastotyöntekijänä ja kouluavustajana."
-        }
+    "graphic_design": {
+        "Postikortit": "Suloiset postikortit, joissa seikkailevat veikeät pandakaverit. Vastaanottajan hymy on taattu!",
+        "Keikkajulisteet": "Kuvitteelliset keikkajulisteet, joissa on leikitelty erilaisten muotojen ja typografian kanssa. Mockup mockupworld.com.",
+        "Osallisuus": "Koulutyönä toteutettu posteri, joka ilmentää osallisuutta ja myötäilee Mielitekomedia-hankkeen graafista ilmettä."
     },
-    "education": {
-        "header": {
-            "Tuni": "Tampereen yliopisto / TTY",
-            "Järvenpään lukio": "Järvenpään lukio"
-        },
-        "content": {
-            "Tuni": "Tietotekniikan diplomi-insinööri",
-            "Järvenpään lukio": "Ylioppilas"
-        },
-        "subcontent": {
-            "Tuni": "Ohjelmistotuotanto <br/> 2012-2019"
-        }
+    "product_design": {
+        "Yöpöytä": "Suunnittelin ja mallinsin tämän RANGLE-yöpöydän keväällä 2023. Yöpöydässä on uniikki design, tilava laatikko, hylly pienille tavaroille sekä sisään upotetut led-valot, joiden kirkkautta voi säätää.",
+        "Taukotila": "Suunnittelin ja mallinsin tämän KOTO-venyttelyalueen koulujen aulatiloihin syksyllä 2022. Venyttelyalue on tarpeiden mukaan muokattavissa. Sen katossa on eri korkeuksilla puolapuita, joissa voi tuntien väleissä venytellä selkää ja verrytellä jäseniään. Venyttelyalue on samalla mukava kokoontumispaikka, jossa voi vaihtaa kuulumisia.",
+        "Käsidesi": "Mallinsin kauniin käsidesipurkin, jonka kaulaa koristaa puinen helminauha.",
+        "Lamppu": "Ryhmätyönä suunniteltu ja valmistettu lamppu koivuvanerista. Valokuvat Matti Konttila.",
+        "Pandakalenteri": "Uniikki magneettinen kalenteri 3-vuotiaalle avuksi päivän kulun hahmottamiseen. Kalenteri koostuu yksittäisistä magneeteista ja sen voi koota haluamallaan tavalla, vaikka jääkaapin oveen yhdessä lapsen kanssa."
+    },
+    "calligraphy": {
+        "Sini": "Kalligrafian Masterclass -kurssilla valmistui nämä upeat logot omaan käyttöön.",
+        "Elisa": "Kalligrafiaa olen hyödyntänyt myös asiakastöissä muun muassa logoon ja graafisiin elementteihin.",
+        "Syntymäjulisteet": "Nämä nimitaulut valmistuivat Kalligrafian Masterclass -kurssilla. Mockup unblast.com."
+    },
+    "design_drawing": {
+        "Eläimet": "Eläinaiheisia hiilityöluonnoksia.",
+        "Tussikukka": "Tusseilla toteutettu kukkasommitelma.",
+        "Vesivärikukka": "Vesiväreillä ja tusseilla toteutettu kukkateos.",
+        "Orvokki": "Pirtsakka vastaväri akryylimaalaus orvokeista.",
+        "Kukkayhdistelmä": "Vesivärein toteutettuja kukkaluonnoksia.",
+        "Välineet": "Nämä työvälineet piirsin tussein.",
+        "Korupiirrokset": "Piirtoalustalla digitaalisesti piirretyt kaulakoruluonnokset morsiamelle."
+    },
+    "ui_design": {
+        "Unelmapaja": "Suunnittelin kuvitteelliselle yritykselle internetsivuston sekä mobiilisovelluksen, joiden avulla asiakkaat voivat itse suunnitella ja tilata unelmiensa koivuvaneriset korvakorut itselleen."
+    },
+    "event_design": {
+        "Ompeluviikonloppu": "Suunnittelin ja toteutin ompeluharrastajille virkistysviikonlopun yhteistyössä Mäntän Luomisen Ihme -kangaskaupan kanssa. Markkinointimateriaalien lisäksi laadin projektille muun muassa budjetin, tehtävätaulukon, ohjelmarungon, ruokalistasuunnitelmat ja tarkan käsikirjoituksen.",
+        "Häät": "Toimin hääsuunnittelijana kesähäissä 2019. Vastuullani oli kaikki visuaalisesta ilmeestä ohjelmaan ja ruokailuihin. Kattauskuvan ottanut Susanne Mäntyvuo."
     }
 }

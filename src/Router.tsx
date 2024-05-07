@@ -5,6 +5,7 @@ import Portfolio from "./components/views/Portfolio.tsx";
 import Contact from "./components/views/Contact.tsx";
 import PortfolioSection from "./components/views/PortfolioSection.tsx";
 import Experience from "./components/views/Experience.tsx";
+import ImgDialog from "./components/views/ImgDialog.tsx";
 
 const router = createHashRouter([
     {
@@ -23,7 +24,16 @@ const router = createHashRouter([
                 path: "portfolio",
                 children: [
                     { index: true, element: <Portfolio /> },
-                    { path: ":section", element: <PortfolioSection /> },
+                    {
+                        path: ":section",
+                        element: <PortfolioSection />,
+                        children: [
+                            {
+                                path: ":item",
+                                element: <ImgDialog />,
+                            },
+                        ],
+                    },
                 ],
             },
             {
