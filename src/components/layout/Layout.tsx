@@ -73,6 +73,7 @@ const StyledTypography = styled(Typography)(({ theme }) => ({
 
 const StyledIconButton = styled(IconButton)(({theme}) => ({
     marginRight: theme.spacing(2),
+    height: "fit-content",
     color: theme.palette.common.white,
     backgroundColor: theme.palette.primary.main,
     "&:hover": {

@@ -1,17 +1,15 @@
 import { useTranslation } from "react-i18next";
 import Layout from "../layout/Layout";
-import { ImageList, styled } from "@mui/material";
+import { styled } from "@mui/material";
 import { Outlet, useNavigate, useParams } from "react-router-dom";
-import { useIsMobile } from "../../hooks";
-import { StyledImageListItem } from "./Portfolio";
 import { ImgItem, getSection } from "../../constants/section";
 import React, { useMemo } from "react";
+import ImageList, { StyledImageListItem } from "../common/ImageList";
 
 const PortfolioSection = () => {
     const { t } = useTranslation();
     const { section } = useParams();
     const { title, items } = getSection(section);
-    const isMobile = useIsMobile();
     const navigate = useNavigate();
 
     const handleItemClick = (path: string | undefined) => {
@@ -25,14 +23,14 @@ const PortfolioSection = () => {
             <Layout header={t(title)} backButton>
                 {groups.map((g) => (
                     <React.Fragment key={g}>
-                        <ImageList variant="masonry" cols={1} sx={{ overflowY: "visible" }} gap={10}>
+                        <ImageList variant="masonry" cols={1}>
                             {items
                                 .filter((i) => i.fullWidth && (i.group ?? 0) === g)
                                 .map((i) => (
                                     <ImageItem key={i.img ?? i.video} {...i} handleClick={handleItemClick} />
                                 ))}
                         </ImageList>
-                        <ImageList variant="masonry" cols={isMobile ? 1 : 3} sx={{ overflowY: "visible" }} gap={10}>
+                        <ImageList variant="masonry" cols={3}>
                             {items
                                 .filter((i) => !i.fullWidth && (i.group ?? 0) === g)
                                 .map((i) => (

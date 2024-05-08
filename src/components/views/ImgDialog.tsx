@@ -39,7 +39,7 @@ const ImgDialog = () => {
     };
 
     return (
-        <Dialog open={true} onClose={onClose} maxWidth={fullWidth ? "sm" : "xs"}>
+        <Dialog open={true} onClose={onClose} maxWidth={fullWidth ? "xl" : "xs"}>
             <StyledCard maxHeight={maxHeight}>
                 {video ? (
                     <video autoPlay loop muted src={`${section}/${video}.${fileExt}`} />
