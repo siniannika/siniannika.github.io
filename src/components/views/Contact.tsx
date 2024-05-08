@@ -11,6 +11,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { OverridableComponent } from "@mui/material/OverridableComponent";
 import { SvgIconTypeMap } from "@mui/material";
+import { MyAvatar } from "../common/MyAvatar";
 
 interface IconListItem {
     Icon: OverridableComponent<SvgIconTypeMap>;
@@ -50,6 +51,9 @@ const Contact = () => {
                         </ListItem>
                     ))}
                 </List>
+            </CenteredBox>
+            <CenteredBox sx={{ mt: 3 }}>
+                <MyAvatar blue size="lg" />
             </CenteredBox>
         </Layout>
     );
