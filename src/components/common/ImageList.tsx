@@ -1,4 +1,6 @@
-import { ImageListProps, ImageListItem, ImageList as MuiImageList, styled } from "@mui/material";
+import MuiImageList, { ImageListProps } from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
+import { styled } from "@mui/material";
 import { useIsMobile } from "../../hooks";
 
 interface Props {

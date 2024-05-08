@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
 import Layout from "../layout/Layout";
-import { ImageList, ImageListItemBar } from "@mui/material";
+import ImageListItemBar from "@mui/material/ImageListItemBar";
 import { useNavigate } from "react-router-dom";
 import { PortfolioSectionPath } from "../../constants/enums";
-import { StyledImageListItem } from "../common/ImageList";
+import ImageList, { StyledImageListItem } from "../common/ImageList";
 
 interface ImgItem {
     img: string;
