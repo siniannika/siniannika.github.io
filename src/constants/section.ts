@@ -22,29 +22,29 @@ export const getSection = (section: string | undefined): Section => {
             return {
                 title: "GraphicDesign",
                 items: [
-                    { img: "Postikortti1", text: "Postikortit" },
-                    { img: "Postikortti4", text: "Postikortit" },
-                    { img: "Keikkajulisteet", fileExt: "jpg", text: "KeikkajulisteetMockup" },
-                    { img: "Postikortti2", text: "Postikortit" },
-                    { img: "Keikkajuliste1", fileExt: "jpg", text: "Keikkajulisteet" },
-                    { img: "Osallisuus", text: "Osallisuus" },
-                    { img: "Postikortti3", text: "Postikortit" },
-                    { img: "Keikkajuliste2", fileExt: "jpg", text: "Keikkajulisteet" },
+                    { img: "Postikortti1", text: "Postikortit", group: 1 },
+                    { img: "Postikortti2", text: "Postikortit", group: 1 },
+                    { img: "Postikortti4", text: "Postikortit", group: 2 },
+                    { img: "Postikortti3", text: "Postikortit", group: 1 },
+                    { img: "Keikkajuliste1", fileExt: "jpg", text: "Keikkajulisteet", group: 2 },
+                    { img: "Keikkajuliste2", fileExt: "jpg", text: "Keikkajulisteet", group: 2 },
+                    { img: "Keikkajulisteet", fileExt: "jpg", text: "KeikkajulisteetMockup", group: 3 },
+                    { img: "Osallisuus", text: "Osallisuus", group: 3 },
                 ],
             };
         case PortfolioSectionPath.Calligraphy:
             return {
                 title: "Calligraphy",
                 items: [
-                    { img: "Sini1", text: "Sini" },
-                    { img: "Elisa1", fileExt: "jpg", text: "Elisa" },
-                    { img: "Kukkakrassi", fileExt: "jpg" },
-                    { img: "Sini2", text: "Sini" },
-                    { img: "Elisa2", fileExt: "jpg", text: "Elisa" },
-                    { img: "Nimitaulu", text: "Syntymäjulisteet" },
-                    { img: "Sini3", text: "Sini" },
-                    { img: "Runo", fileExt: "jpg" },
-                    { img: "Mietelause", fileExt: "jpg" },
+                    { img: "Sini1", text: "Sini", group: 1 },
+                    { img: "Sini2", text: "Sini", group: 1 },
+                    { img: "Sini3", text: "Sini", group: 1 },
+                    { img: "Elisa1", fileExt: "jpg", text: "Elisa", group: 2 },
+                    { img: "Elisa2", fileExt: "jpg", text: "Elisa", group: 2 },
+                    { img: "Mietelause", fileExt: "jpg", group: 2 },
+                    { img: "Nimitaulu", text: "Syntymäjulisteet", group: 3 },
+                    { img: "Kukkakrassi", fileExt: "jpg", group: 3 },
+                    { img: "Runo", fileExt: "jpg", group: 3 },
                 ],
             };
         case PortfolioSectionPath.DesignDrawing:
@@ -66,16 +66,16 @@ export const getSection = (section: string | undefined): Section => {
             return {
                 title: "ProductDesign",
                 items: [
-                    { img: "Yöpöytä1", text: "Yöpöytä" },
-                    { img: "Aulateos1", text: "Taukotila" },
-                    { img: "Lamppu1", fileExt: "jpg", text: "Lamppu" },
-                    { video: "Pandakalenteri", fileExt: "mp4", text: "Pandakalenteri", maxHeight: "245px" },
-                    { img: "Yöpöytä2", text: "Yöpöytä" },
-                    { img: "Aulateos2", text: "Taukotila" },
-                    { img: "Lamppu2", fileExt: "jpg", text: "Lamppu" },
-                    { img: "Yöpöytä3", text: "Yöpöytä" },
-                    { img: "Käsidesi", text: "Käsidesi" },
-                    { img: "Lamppu3", fileExt: "jpg", text: "LamppuTyökuva" },
+                    { img: "Yöpöytä1", text: "Yöpöytä", group: 1 },
+                    { img: "Yöpöytä2", text: "Yöpöytä", group: 1 },
+                    { img: "Yöpöytä3", text: "Yöpöytä", group: 1 },
+                    { img: "Aulateos1", text: "Taukotila", group: 2 },
+                    { img: "Aulateos2", text: "Taukotila", group: 2 },
+                    { img: "Käsidesi", text: "Käsidesi", group: 2 },
+                    { img: "Lamppu1", fileExt: "jpg", text: "Lamppu", group: 3 },
+                    { img: "Lamppu2", fileExt: "jpg", text: "Lamppu", group: 3 },
+                    { img: "Lamppu3", fileExt: "jpg", text: "LamppuTyökuva", group: 3 },
+                    { video: "Pandakalenteri", fileExt: "mp4", text: "Pandakalenteri", maxHeight: "245px", group: 4 },
                 ],
             };
         case PortfolioSectionPath.UIDesign:
@@ -90,11 +90,11 @@ export const getSection = (section: string | undefined): Section => {
             return {
                 title: "EventDesign",
                 items: [
-                    { img: "Ompelu1", text: "Ompeluviikonloppu" },
-                    { img: "Häät1", fileExt: "jpeg", text: "Häät" },
-                    { img: "Ompelu2", text: "Ompeluviikonloppu" },
-                    { img: "Häät 2", fileExt: "jpg", text: "HäätKattaus" },
-                    { img: "Ompelu3", text: "Ompeluviikonloppu" },
+                    { img: "Ompelu1", text: "Ompeluviikonloppu", group: 1 },
+                    { img: "Ompelu2", text: "Ompeluviikonloppu", group: 1 },
+                    { img: "Ompelu3", text: "Ompeluviikonloppu", group: 1 },
+                    { img: "Häät1", fileExt: "jpeg", text: "Häät", group: 2 },
+                    { img: "Häät 2", fileExt: "jpg", text: "HäätKattaus", group: 2 },
                 ],
             };
         case PortfolioSectionPath.Branding:
