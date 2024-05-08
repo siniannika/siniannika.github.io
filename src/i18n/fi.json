@@ -66,5 +66,13 @@
         "Kangas": "Näillä kuvilla kartutettiin Luomisen Ihme -kangaskaupan kuvamaailmaa.",
         "Matka": "Henkeäsalpaavan upeat matkakuvat Seychelleiltä.",
         "Roosa": "Juhannuksena kuvasin tätä pientä prinsessaa."
+    },
+    "mode": {
+        "dark": "Dark mode",
+        "light": "Light mode"
+    },
+    "lang": {
+        "en": "In English",
+        "fi": "Suomeksi"
     }
 }
