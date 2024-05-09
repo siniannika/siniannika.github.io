@@ -1,3 +1,4 @@
+import { DialogProps } from "@mui/material/Dialog";
 import { PortfolioSectionPath } from "./enums";
 
 export interface ImgItem {
@@ -9,6 +10,7 @@ export interface ImgItem {
     maxHeight?: string;
     text?: string;
     group?: number;
+    dialogWidth?: DialogProps["maxWidth"];
 }
 
 interface Section {
@@ -103,9 +105,9 @@ export const getSection = (section: string | undefined): Section => {
                 title: "Branding",
                 items: [
                     { img: "Sini", group: 1, fullWidth: true, text: "Sini" },
-                    { img: "Sini2", group: 1, fileExt: "jpg", text: "Sini" },
-                    { img: "Sini3", group: 1, fileExt: "jpg", text: "Sini" },
-                    { img: "Sini4", group: 1, fileExt: "jpg", text: "Sini" },
+                    { img: "Sini2", group: 1, fileExt: "jpg", dialogWidth: "sm", text: "Sini" },
+                    { img: "Sini3", group: 1, fileExt: "jpg", dialogWidth: "sm", text: "Sini" },
+                    { img: "Sini4", group: 1, fileExt: "jpg", dialogWidth: "sm", text: "Sini" },
                     { img: "Elisa", group: 2, fullWidth: true, text: "Elisa" },
                     { img: "Häät1", group: 2, text: "Häät" },
                     { img: "Häät2", group: 2, text: "Häät" },

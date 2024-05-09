@@ -32,14 +32,14 @@ const ImgDialog = () => {
 
     if (!i) return null;
 
-    const { img, video, fileExt = "png", fullWidth, text, maxHeight } = i;
+    const { img, video, fileExt = "png", fullWidth, text, maxHeight, dialogWidth } = i;
 
     const onClose = () => {
         navigate("../");
     };
 
     return (
-        <Dialog open={true} onClose={onClose} maxWidth={fullWidth ? "xl" : "xs"}>
+        <Dialog open={true} onClose={onClose} maxWidth={dialogWidth ?? (fullWidth ? "xl" : "xs")}>
             <StyledCard maxHeight={maxHeight}>
                 {video ? (
                     <video autoPlay loop muted src={`${section}/${video}.${fileExt}`} />
