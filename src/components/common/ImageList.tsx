@@ -6,14 +6,15 @@ import { useIsMobile } from "../../hooks";
 interface Props {
     cols: number;
     variant?: ImageListProps["variant"];
+    gap?: number;
     children: JSX.Element | JSX.Element[];
 }
 
-const ImageList = ({ cols, variant, children }: Props) => {
+const ImageList = ({ cols, variant, gap, children }: Props) => {
     const isMobile = useIsMobile();
 
     return (
-        <MuiImageList variant={variant} cols={isMobile ? 1 : cols} sx={{ my: 0.5 }} gap={10}>
+        <MuiImageList variant={variant} cols={isMobile ? 1 : cols} sx={{ my: 0.5 }} gap={gap}>
             {children}
         </MuiImageList>
     );

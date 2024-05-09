@@ -23,14 +23,14 @@ const PortfolioSection = () => {
             <Layout header={t(title)} backButton>
                 {groups.map((g) => (
                     <React.Fragment key={g}>
-                        <ImageList variant="masonry" cols={1}>
+                        <ImageList variant="masonry" cols={1} gap={10}>
                             {items
                                 .filter((i) => i.fullWidth && (i.group ?? 0) === g)
                                 .map((i) => (
                                     <ImageItem key={i.img ?? i.video} {...i} handleClick={handleItemClick} />
                                 ))}
                         </ImageList>
-                        <ImageList variant="masonry" cols={3}>
+                        <ImageList variant="masonry" cols={3} gap={10}>
                             {items
                                 .filter((i) => !i.fullWidth && (i.group ?? 0) === g)
                                 .map((i) => (
