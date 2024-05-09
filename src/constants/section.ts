@@ -30,6 +30,7 @@ export const getSection = (section: string | undefined): Section => {
                     { img: "Keikkajuliste2", fileExt: "jpg", text: "Keikkajulisteet", group: 2 },
                     { img: "Keikkajulisteet", fileExt: "jpg", text: "KeikkajulisteetMockup", group: 3 },
                     { img: "Osallisuus", text: "Osallisuus", group: 3 },
+                    { img: "Aluekartta", text: "Aluekartta", group: 3 },
                 ],
             };
         case PortfolioSectionPath.Calligraphy:
