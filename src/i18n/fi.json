@@ -13,7 +13,7 @@
     "Experience": "Työkokemus",
     "Education": "Koulutus",
     "Contact": "Yhteystiedot",
-    "aboutMeContent": "Olen Savonian amk:ssa opintojaan viimeistelevä palvelumuotoiluopiskelija Kangasalta. Palvelumuotoilun lisäksi olen sisällyttänyt opintoihini tuotemuotoilun kursseja.<br/><br/>Minua kiinnostaa asiakaslähtöisten palveluiden kehittäminen sekä erilaisten muotoiluhaasteiden ratkominen. Olen kerännyt kokemusta yrityksen visuaalisen ilmeen rakentamisesta sekä graafisesta suunnittelusta. Mielenkiinnonkohteitani ovat näiden lisäksi UI-suunnittelu, kuvittaminen, valokuvaus, kalligrafia ja korujen suunnittelu.<br/><br/>Olen ystävällinen ja empaattinen tiimipelaaja, jolta luonnistuu myös itsenäinen työskentely. Taustallani on yli kymmenen vuoden työkokemus asiakaspalvelualalla, joten vuorovaikutustaidot ovat ehdoton vahvuuteni.",
+    "aboutMeContent": "Olen Savonian amk:ssa opintojaan viimeistelevä palvelumuotoiluopiskelija Kangasalta. Palvelumuotoilun lisäksi olen sisällyttänyt opintoihini tuotemuotoilun kursseja.<br/><br/>Minua kiinnostaa asiakaslähtöisten palveluiden kehittäminen sekä erilaisten muotoiluhaasteiden ratkominen. Olen kerännyt kokemusta yrityksen visuaalisen ilmeen rakentamisesta, graafisesta suunnittelusta ja UI-suunnittelusta. Mielenkiinnonkohteitani ovat näiden lisäksi kuvittaminen, valokuvaus, kalligrafia ja korujen suunnittelu.<br/><br/>Olen ystävällinen ja empaattinen tiimipelaaja, jolta luonnistuu myös itsenäinen työskentely. Taustallani on yli kymmenen vuoden työkokemus asiakaspalvelualalla, joten vuorovaikutustaidot ovat ehdoton vahvuuteni.",
     "email": "sini.a.jokinen@gmail.com",
     "linkedin": "linkedin.com/in/sinipoyry",
     "instagram": "instagram.com/bysiniiannika",
@@ -34,8 +34,11 @@
     },
     "calligraphy": {
         "Sini": "Kalligrafian Masterclass -kurssilla valmistui nämä upeat logot omaan käyttöön.",
-        "Elisa": "Kalligrafiaa olen hyödyntänyt myös asiakastöissä logoihin ja graafisiin elementteihin.",
-        "Syntymäjulisteet": "Nämä nimitaulut valmistuivat Kalligrafian Masterclass -kurssilla. Mockup unblast.com."
+        "Elisa": "Suunnittelin Luomisen ihme – kankaat ja käsityöt liiketilalle logon, jossa hyödynsin käsin kirjoitettua ja piirrettyä kalligrafiaa. Logon kukissa viitataan omistajan rakkaaseen harrastukseen, kirjontaan.",
+        "Elisa2": "Luomisen Ihme – kankaat ja käsityöt yrityksen graafiset elementit, joissa hyödynsin piirrettyä kalligrafiaa.",
+        "Syntymäjulisteet": "Nämä nimitaulut valmistuivat Kalligrafian Masterclass -kurssilla. Mockup unblast.com.",
+        "Kattaus": "Suunnittelin ja toteutin somistevuokraamo Lumouksen kattauskuvauksiin nämä kauniit nimilaput.",
+        "Lumous": "Suunnittelin somistevuokraamo Lumoukselle uuden logon, jossa hyödynsin käsin kirjoitettua ja piirrettyä kalligrafiaa."
     },
     "design_drawing": {
         "Eläimet": "Eläinaiheisia hiilityöluonnoksia.",
@@ -47,7 +50,8 @@
         "Korupiirrokset": "Piirtoalustalla digitaalisesti piirretyt kaulakoruluonnokset morsiamelle."
     },
     "ui_design": {
-        "Unelmapaja": "Suunnittelin kuvitteelliselle yritykselle internetsivuston sekä mobiilisovelluksen, joiden avulla asiakkaat voivat itse suunnitella ja tilata unelmiensa koivuvaneriset korvakorut itselleen."
+        "Unelmapaja": "Suunnittelin kuvitteelliselle yritykselle internetsivuston sekä mobiilisovelluksen, joiden avulla asiakkaat voivat itse suunnitella ja tilata unelmiensa koivuvaneriset korvakorut itselleen.",
+        "Lumous": "Somistevuokraamo Lumouksen nettisivut saivat uuden ilmeen, kun tein yritykselle UI-suunnittelua harjoitteluni aikana. Laadin yritykselle suunnitelman sivuston uudesta visuaalisesta ilmeestä sekä sivuston rakenteen ja sisällön muokkaamisesta entistä käyttäjäystävällisemmäksi. Hyödynsin työssäni informaatiomuotoilun ja palvelumuotoilun oppeja rakentamalla sivustolle myös palvelupolun sekä sijaintikartan."
     },
     "event_design": {
         "Ompeluviikonloppu": "Suunnittelin ja toteutin ompeluharrastajille virkistysviikonlopun yhteistyössä Mäntän Luomisen Ihme -kangaskaupan kanssa. Markkinointimateriaalien lisäksi laadin projektille muun muassa budjetin, tehtävätaulukon, ohjelmarungon, ruokalistasuunnitelmat ja tarkan käsikirjoituksen.",
@@ -66,6 +70,8 @@
         "Korut": "Talviset tuotekuvaukset itse tehdyistä koruista.",
         "Kangas": "Näillä kuvilla kartutettiin Luomisen Ihme -kangaskaupan kuvamaailmaa.",
         "Matka": "Henkeäsalpaavan upeat matkakuvat Seychelleiltä.",
+        "Kattaus": "Suunnittelemani kattauskuvaukset, jotka toteutin yhteistyössä somistevuokraamo Lumouksen kanssa. Kuvia yritys hyödynsi sosiaalisessa mediassa sekä internetsivustoillaan.",
+        "Sinihelmi": "Nämä kuvat otin, kun rakensin kuvitteelliselle hääalan yritykselle visuaalista ilmettä.",
         "Roosa": "Juhannuksena kuvasin tätä pientä prinsessaa."
     },
     "mode": {

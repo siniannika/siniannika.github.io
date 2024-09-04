@@ -6,6 +6,7 @@ export interface ImgItem {
     video?: string;
     fileExt?: string;
     fullWidth?: boolean;
+    fill?: boolean;
     height?: string;
     maxHeight?: string;
     text?: string;
@@ -43,11 +44,14 @@ export const getSection = (section: string | undefined): Section => {
                     { img: "Sini2", text: "Sini", group: 1 },
                     { img: "Sini3", text: "Sini", group: 1 },
                     { img: "Elisa1", fileExt: "jpg", text: "Elisa", group: 2 },
-                    { img: "Elisa2", fileExt: "jpg", text: "Elisa", group: 2 },
+                    { img: "Elisa2", fileExt: "jpg", text: "Elisa2", group: 2 },
                     { img: "Mietelause", fileExt: "jpg", group: 2 },
-                    { img: "Nimitaulu", text: "Syntymäjulisteet", group: 3 },
                     { img: "Kukkakrassi", fileExt: "jpg", group: 3 },
+                    { img: "Lumous", text: "Lumous", group: 3 },
+                    { img: "Nimitaulu", text: "Syntymäjulisteet", group: 3 },
+                    { img: "Kattaus2", fileExt: "jpg", text: "Kattaus", group: 3 },
                     { img: "Runo", fileExt: "jpg", group: 3 },
+                    { img: "Kattaus", fileExt: "jpg", text: "Kattaus", group: 3 },
                 ],
             };
         case PortfolioSectionPath.DesignDrawing:
@@ -84,9 +88,10 @@ export const getSection = (section: string | undefined): Section => {
         case PortfolioSectionPath.UIDesign:
             return {
                 title: "UIDesign",
-                items: [
-                    { img: "Unelmapaja", text: "Unelmapaja" },
-                    { video: "Unelmapaja2", fileExt: "mp4", height: "398px", text: "Unelmapaja" },
+                items: [                    
+                    { img: "Unelmapaja", text: "Unelmapaja", group: 2 },
+                    { video: "Unelmapaja2", fileExt: "mp4", height: "398px", text: "Unelmapaja", group: 2 },
+                    { video: "Lumous", fileExt: "mp4", text: "Lumous", group: 1, fullWidth: true },
                 ],
             };
         case PortfolioSectionPath.EventDesign:
@@ -106,14 +111,12 @@ export const getSection = (section: string | undefined): Section => {
                 items: [
                     { img: "Sini", group: 1, fullWidth: true, text: "Sini" },
                     { img: "Sini2", group: 1, fileExt: "jpg", dialogWidth: "sm", text: "Sini" },
-                    { img: "Sini3", group: 1, fileExt: "jpg", dialogWidth: "sm", text: "Sini" },
+                    { img: "Sini3", group: 1, dialogWidth: "sm", text: "Sini" },
                     { img: "Sini4", group: 1, fileExt: "jpg", dialogWidth: "sm", text: "Sini" },
                     { img: "Elisa", group: 2, fullWidth: true, text: "Elisa" },
                     { img: "Häät1", group: 2, text: "Häät" },
                     { img: "Häät2", group: 2, text: "Häät" },
                     { img: "Häät3", group: 2, text: "Häät" },
-                    { img: "Häät4", group: 2, text: "Häät" },
-                    { img: "Häät5", group: 2, text: "Häät" },
                 ],
             };
         case PortfolioSectionPath.Photography:
@@ -123,29 +126,38 @@ export const getSection = (section: string | undefined): Section => {
                     { img: "Anna1", fileExt: "jpg", text: "Anna", group: 1 },
                     { img: "Anna2", fileExt: "jpg", text: "Anna", group: 1 },
                     { img: "Anna3", fileExt: "jpg", text: "Anna", group: 1 },
-                    { img: "Matka1", fileExt: "jpg", text: "Matka", group: 2 },
-                    { img: "Matka3", fileExt: "jpg", text: "Matka", group: 2 },
-                    { img: "Matka4", fileExt: "jpg", text: "Matka", group: 2 },
-                    { img: "Matka5", fileExt: "jpg", text: "Matka", group: 2 },
-                    { img: "Matka2", fileExt: "jpg", text: "Matka", group: 2 },
-                    { img: "Kangas2", fileExt: "jpg", text: "Kangas", group: 3 },
-                    { img: "Kangas3", fileExt: "jpg", text: "Kangas", group: 3 },
-                    { img: "Kangas4", fileExt: "jpg", text: "Kangas", group: 3 },
-                    { img: "Koru1", fileExt: "jpg", text: "Korut", group: 4 },
-                    { img: "Koru2", fileExt: "jpg", text: "Korut", group: 4 },
-                    { img: "Maisema1", fileExt: "jpg", group: 4 },
-                    { img: "Maisema2", fileExt: "jpg", group: 4 },
-                    { img: "Maisema3", fileExt: "jpg", group: 4 },
-                    { img: "Maisema5", fileExt: "jpg", group: 4 },
-                    { img: "Maisema4", fileExt: "jpg", group: 4 },
-                    { img: "Maisema6", fileExt: "jpg", group: 4 },
-                    { img: "Maisema7", fileExt: "jpg", group: 4 },
-                    { img: "Martsu1", fileExt: "jpg", text: "Martsu", group: 5 },
-                    { img: "Samu2", fileExt: "jpg", text: "Samu", group: 5 },
-                    { img: "Martsu2", fileExt: "jpg", text: "Martsu", group: 5 },
-                    { img: "Samu1", fileExt: "jpg", text: "Samu", group: 5 },
-                    { img: "Martsu3", fileExt: "jpg", text: "Martsu", group: 5 },
-                    { img: "Roosa", fileExt: "jpg", text: "Roosa", group: 5 },
+                    { img: "Kangas2", fileExt: "jpg", text: "Kangas", group: 2 },
+                    { img: "Kangas3", fileExt: "jpg", text: "Kangas", group: 2 },
+                    { img: "Kangas4", fileExt: "jpg", text: "Kangas", group: 2 },
+                    { img: "Kattaus3", fileExt: "jpg", text: "Kattaus", group: 3 },
+                    { img: "Kattaus2", fileExt: "jpg", text: "Kattaus", group: 3 },
+                    { img: "Sinihelmi1", text: "Sinihelmi", group: 3 },
+                    { img: "Kattaus5", fileExt: "jpg", text: "Kattaus", group: 3 },
+                    { img: "Kattaus4", fileExt: "jpg", text: "Kattaus", group: 3 },
+                    { img: "Sinihelmi4", text: "Sinihelmi", group: 3 },
+                    { img: "Kattaus1", fileExt: "jpg", text: "Kattaus", group: 3 },
+                    { img: "Sinihelmi3", text: "Sinihelmi", group: 3 },
+                    { img: "Sinihelmi2", text: "Sinihelmi", group: 3 },
+                    { img: "Matka1", fileExt: "jpg", text: "Matka", group: 4 },
+                    { img: "Matka3", fileExt: "jpg", text: "Matka", group: 4 },
+                    { img: "Matka4", fileExt: "jpg", text: "Matka", group: 4 },
+                    { img: "Matka5", fileExt: "jpg", text: "Matka", group: 4 },
+                    { img: "Matka2", fileExt: "jpg", text: "Matka", group: 4 },
+                    { img: "Koru1", fileExt: "jpg", text: "Korut", group: 5 },
+                    { img: "Koru2", fileExt: "jpg", text: "Korut", group: 5 },
+                    { img: "Maisema1", fileExt: "jpg", group: 5 },
+                    { img: "Maisema2", fileExt: "jpg", group: 5 },
+                    { img: "Maisema3", fileExt: "jpg", group: 5 },
+                    { img: "Maisema5", fileExt: "jpg", group: 5 },
+                    { img: "Maisema4", fileExt: "jpg", group: 5 },
+                    { img: "Maisema6", fileExt: "jpg", group: 5 },
+                    { img: "Maisema7", fileExt: "jpg", group: 5 },
+                    { img: "Martsu1", fileExt: "jpg", text: "Martsu", group: 6 },
+                    { img: "Samu2", fileExt: "jpg", text: "Samu", group: 6 },
+                    { img: "Martsu2", fileExt: "jpg", text: "Martsu", group: 6 },
+                    { img: "Samu1", fileExt: "jpg", text: "Samu", group: 6 },
+                    { img: "Martsu3", fileExt: "jpg", text: "Martsu", group: 6 },
+                    { img: "Roosa", fileExt: "jpg", text: "Roosa", group: 6 },
                 ],
             };
         default:
