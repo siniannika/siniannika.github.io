@@ -47,8 +47,8 @@ const ImgDialog = () => {
                     <CardMedia component="img" alt={img} image={`${section}/${img}.${fileExt}`} />
                 )}
                 {text ? (
-                    <CardContent>
-                        <Typography variant="body1">{t(`${section}.${text}`)}</Typography>
+                    <CardContent sx={{ whiteSpace: "pre-wrap" }}>
+                        <Typography variant="body1" dangerouslySetInnerHTML={{ __html: t(`${section}.${text}`).replace(/<br\/>/g, "\n") }} />
                     </CardContent>
                 ) : null}
                 <CardActions>

@@ -3,6 +3,7 @@
     "Profile": "Profiili",
     "Portfolio": "Portfolio",
     "GraphicDesign": "Graafinen suunnittelu",
+    "ServiceDesign": "Palvelumuotoilu",
     "Calligraphy": "Kalligrafia",
     "DesignDrawing": "Muotoilupiirtäminen",
     "ProductDesign": "Tuotemuotoilu",
@@ -13,7 +14,7 @@
     "Experience": "Työkokemus",
     "Education": "Koulutus",
     "Contact": "Yhteystiedot",
-    "aboutMeContent": "Olen Savonian amk:ssa opintojaan viimeistelevä palvelumuotoiluopiskelija Kangasalta. Palvelumuotoilun lisäksi olen sisällyttänyt opintoihini tuotemuotoilun kursseja.<br/><br/>Minua kiinnostaa asiakaslähtöisten palveluiden kehittäminen sekä erilaisten muotoiluhaasteiden ratkominen. Olen kerännyt kokemusta yrityksen visuaalisen ilmeen rakentamisesta, graafisesta suunnittelusta ja UI-suunnittelusta. Mielenkiinnonkohteitani ovat näiden lisäksi kuvittaminen, valokuvaus, kalligrafia ja korujen suunnittelu.<br/><br/>Olen ystävällinen ja empaattinen tiimipelaaja, jolta luonnistuu myös itsenäinen työskentely. Taustallani on yli kymmenen vuoden työkokemus asiakaspalvelualalla, joten vuorovaikutustaidot ovat ehdoton vahvuuteni.",
+    "aboutMeContent": "Olen empaattinen, vastuuntuntoinen ja luova palvelumuotoilija Kangasalalta. Taustallani on yli kymmenen vuoden työkokemus asiakaspalvelualalla, joten vuorovaikutustaidot ovat ehdoton vahvuuteni. Palvelumuotoilijaksi valmistuin keväällä 2025 Savonian ammattikorkeakoulusta. Opintoihini sisällytin palvelumuotoilun lisäksi tuotemuotoilun kursseja.<br/><br/>Minua kiinnostaa asiakaslähtöisten palveluiden kehittäminen sekä erilaisten muotoiluhaasteiden ratkominen. Otan innolla vastaan uusia haasteita ja nautin siitä, että voin hyödyntää osaamistani monipuolisesti. Muotoilijana haluan luoda innovatiivisia, visuaalisesti kauniita ja käytännöllisiä ratkaisuja, jotka ovat käyttäjilleen merkityksellisiä.<br/><br/>Kokemusta olen kerryttänyt yrityksen visuaalisen ilmeen rakentamisesta, UI-suunnittelusta sekä graafisesta suunnittelusta. Lisäksi olen muotoillut erilaisia tapahtumia ja matkailupalveluita. Töissäni näkyy usein oma kädenjälkeni – käsinkirjoitetut kalligrafialogot, itse ottamani valokuvat ja herkät vesivärikuvitukset tekevät töistäni yksilöllisiä.<br/><br/>Tällä hetkellä työskentelen kevytyrittäjänä vaihtelevien projektien, kuten hääsuunnittelun, valokuvauskeikkojen ja graafisen suunnittelun parissa. Koska muotoiluala kiinnostaa minua aidosti, syvennän osaamistani jatkuvasti. Parhaillaan opiskelen kuosisuunnittelua sekä viestintää.",
     "email": "sini.a.jokinen@gmail.com",
     "linkedin": "linkedin.com/in/sinipoyry",
     "instagram": "instagram.com/bysiniiannika",
@@ -22,7 +23,8 @@
         "Keikkajulisteet": "Kuvitteelliset keikkajulisteet, joissa on leikitelty erilaisten muotojen ja typografian kanssa.",
         "KeikkajulisteetMockup": "Kuvitteelliset keikkajulisteet, joissa on leikitelty erilaisten muotojen ja typografian kanssa. Mockup mockupworld.com.",
         "Osallisuus": "Koulutyönä toteutettu posteri, joka ilmentää osallisuutta ja myötäilee Mielitekomedia-hankkeen graafista ilmettä.",
-        "Aluekartta": "Tämä tekemäni aluekartta valmistui kuvitteelliselle tapahtumalle osana opasteita koskevaa ryhmätyötä."
+        "Aluekartta": "Tämä tekemäni aluekartta valmistui kuvitteelliselle tapahtumalle osana opasteita koskevaa ryhmätyötä.",
+        "Oppari": "Opinnäytetyökseni muotoilin kolme käyttäjälähtöisesti suunniteltua kutsukorttikokonaisuutta, joiden suunnitteluprosessissa hyödynsin palvelumuotoilun menetelmiä. Kutsukortit sisältävät käsin kirjoitettua modernia kalligrafiaa sekä käsin piirrettyjä kuvituksia, mikä tekee lopputuloksesta uniikin. Painetuista kutsukorttikokonaisuuksista on nähtävissä tuotekuvia Portfolion valokuvauskansiosta."
     },
     "product_design": {
         "Yöpöytä": "Suunnittelin ja mallinsin tämän RANGLE-yöpöydän keväällä 2023. Yöpöydässä on uniikki design, tilava laatikko, hylly pienille tavaroille sekä sisään upotetut led-valot, joiden kirkkautta voi säätää.",
@@ -34,7 +36,7 @@
     },
     "calligraphy": {
         "Sini": "Kalligrafian Masterclass -kurssilla valmistui nämä upeat logot omaan käyttöön.",
-        "Elisa": "Suunnittelin kankaisiin ja käsitöihin erikoistuneelle Luomisen ihme -liiketilalle logon, jossa hyödynsin käsin kirjoitettua ja piirrettyä kalligrafiaa. Logon kukissa viitataan omistajan rakkaaseen harrastukseen, kirjontaan.",
+        "Elisa": "Suunnittelin kankaisiin ja käsitöihin erikoistuneelle Luomisen ihme -yritykselle logon, jossa hyödynsin käsin kirjoitettua ja piirrettyä kalligrafiaa. Logon kukissa viitataan omistajan rakkaaseen harrastukseen, kirjontaan.",
         "Elisa2": "Kankaisiin ja käsitöihin erikoistuneen Luomisen Ihme -yrityksen graafiset elementit, joissa hyödynsin piirrettyä kalligrafiaa.",
         "Syntymäjulisteet": "Nämä nimitaulut valmistuivat Kalligrafian Masterclass -kurssilla. Mockup unblast.com.",
         "Kattaus": "Suunnittelin ja toteutin somistevuokraamo Lumouksen kattauskuvauksiin nämä kauniit nimilaput.",
@@ -45,9 +47,15 @@
         "Tussikukka": "Tusseilla toteutettu kukkasommitelma.",
         "Vesivärikukka": "Vesiväreillä ja tusseilla toteutettu kukkataideteos.",
         "Orvokki": "Pirtsakka vastaväri akryylimaalaus orvokeista.",
-        "Kukkayhdistelmä": "Vesivärein toteutettuja kukkaluonnoksia.",
+        "Kukkayhdistelmä": "Vesivärein maalattuja kukkaluonnoksia.",
         "Välineet": "Nämä työvälineet piirsin tussein.",
-        "Korupiirrokset": "Piirtoalustalla digitaalisesti piirretyt kaulakoruluonnokset morsiamelle."
+        "Korupiirrokset": "Piirtoalustalla digitaalisesti piirretyt kaulakoruluonnokset morsiamelle.",
+        "Kukka": "Käsin vesiväreillä maalattuja ja digitaalisesti viimeisteltyjä kukkia.",
+        "Kultalogo": "Tämä monogrammi syntyi digitaalisesti käsin piirretystä lehtiköynnöksestä.",
+        "Pandat": "Suloiset pandat kuvitin digitaalisesti Adobe Illustratorissa.",
+        "Pöllöt": "Nämä Adobe Illustratorissa kuvitetut pöllöt seikkailivat ensimmäisessä animaatiossani.",
+        "Kirkko": "Piirtoalustalla piirretty digitaalinen viivapiirustus Tampereen Tuomiokirkosta.",
+        "Kartano": "Piirtoalustalla piirretty digitaalinen viivapiirustus Hatanpään kartanosta."
     },
     "ui_design": {
         "Unelmapaja": "Suunnittelin kuvitteelliselle yritykselle internetsivuston sekä mobiilisovelluksen, joiden avulla asiakkaat voivat itse suunnitella ja tilata unelmiensa koivuvaneriset korvakorut itselleen.",
@@ -56,23 +64,37 @@
     "event_design": {
         "Ompeluviikonloppu": "Suunnittelin ja toteutin ompeluharrastajille virkistysviikonlopun yhteistyössä Mäntän Luomisen Ihme -kangaskaupan kanssa. Markkinointimateriaalien lisäksi laadin projektille muun muassa budjetin, tehtävätaulukon, ohjelmarungon, ruokalistasuunnitelmat ja tarkan käsikirjoituksen.",
         "HäätKattaus": "Suunnittelin ja järjestin kesähäät vuonna 2019. Vastuullani oli kaikki visuaalisesta ilmeestä ohjelmaan ja ruokailuihin. Valokuva Susanne Mäntyvuo.",
-        "Häät": "Suunnittelin ja järjestin kesähäät vuonna 2019. Vastuullani oli kaikki visuaalisesta ilmeestä ohjelmaan ja ruokailuihin."
+        "Häät": "Suunnittelin ja järjestin kesähäät vuonna 2019. Vastuullani oli kaikki visuaalisesta ilmeestä ohjelmaan ja ruokailuihin.",
+        "Seaplane": "Italian MBVision-yrityksessä suorittamassani harjoittelussa pääsin muotoilemaan matkailupalveluita. Suunnittelimme Atte Jäntin kanssa kaksi erimittaista vesitasolentokoneella toteutettavaa luksusmatkailupakettia, jotka kiertelevät Suomen kauneimmissa matkailukohteissa."
     },
     "branding": {
         "Sini": "Suunnittelin ja rakensin itselleni visuaalisen identiteetin, jonka avulla koostin brändikäsikirjan sekä tämän portfoliosivuston visuaalisen ilmeen. Sivuston koodauksen toteutti Roope Pöyry.",
         "Elisa": "Rakensin juuri ovensa avanneelle Luomisen Ihme -yritykselle visuaalisen ilmeen, jonka avulla koostin yritykselle myös brändikäsikirjan sekä erilaisia markkinointipohjia. Luomisen Ihme on kankaisiin ja käsitöihin erikoistunut liiketila Mäntässä, jossa suoritin ensimmäisen ammatillisen harjoitteluni.",
-        "Häät": "Suunnittelin kuvitteelliselle yritykselle visuaalisen ilmeen, jonka avulla tein yritykselle lehtimainoksen, roll up:n, käyntikortin sekä sosiaalisen median kuvia. Materiaaleissa on hyödynnetty itse otettuja valokuvia, joissa osassa näkyy myös itse tehty hiuskoru."
+        "Häät": "Suunnittelin kuvitteelliselle yritykselle visuaalisen ilmeen, jonka avulla tein yritykselle lehtimainoksen, roll up:n, käyntikortin sekä sosiaalisen median kuvia. Materiaaleissa on hyödynnetty itse otettuja valokuvia, joissa osassa näkyy myös itse tehty hiuskoru.",
+        "Lumous": "Suunnittelin somistevuokraamo Lumoukselle uuden logon ja värimaailman, joita hyödynsin myös yrityksen verkkosivuston UI-suunnittelussa. Lumous on tamperelainen somistevuokraamo, jossa suoritin viimeisen harjoitteluni."
+    },
+    "service_design": {
+        "Oppari": "Kuvaus: Suunnittelin kolme käyttäjälähtöistä ja helposti muokattavaa hääkutsupohjaa hyödyntäen graafisen suunnittelun periaatteita, hääalan trendejä ja palvelumuotoilun menetelmiä. Projektin tavoitteena oli syventää graafisen suunnittelun osaamista ja soveltaa palvelumuotoilua hääalan kontekstiin.<br/><br/>Prosessi: Aloitin projektin laajalla benchmarkkauksella, johon sisältyi trendi- ja kilpailija-analyysi. Tutustuin myös tunnelmamuotoilun ja graafisen suunnittelun teoriaan. Hyödynsin palvelumuotoilun työkaluja, kuten käsitekarttaa, arvonluontikarttaa ja visuaalisia tyylikarttoja, joiden avulla pääsin tarkastelemaan kokonaisuutta käyttäjän näkökulmasta. Näiden pohjalta luonnostelin ja prototypoin kutsupohjat sekä toteutin mockupit. Lopuksi keräsin käyttäjäpalautetta, jonka avulla tein viimeiset muutokset.<br/><br/>Lopputulos: Tuloksena valmistui kolme kustomoitavaa kutsukorttipohjaa, jotka tukevat hääjuhlan teemaa ja tunnelmaa, sekä tuovat esille hääparin tarinaa ja persoonallisuutta. Projekti osoitti, että palvelumuotoilun menetelmien avulla voidaan syventää graafista suunnittelua ja varmistaa, että lopputuotteet vastaavat käyttäjien tarpeisiin. Valmiit kutsukortit ovat nähtävillä portfolion valokuvaus- ja graafisen suunnittelun osioissa.",
+        "Bench": "Kuvaus: Osallistuin Italiassa, Pontederassa järjestettyyn Creactivity-tapahtumaan yhdessä Outi Arbeliuksen, Atte Jäntin, Anne Vartiaisen ja Essi Koposen kanssa. Tapahtumassa oli 24 tunnin muotoilusprintti, jonka teemana oli Smart living. Meidän lisäksi mukana oli noin 350 italialaista muotoilijaopiskelijaa. Tiimimme kehitti tulevaisuuden penkkiratkaisut, jotka sopivat Italian kapeille kujille ja tarjoavat älykkäitä lisäominaisuuksia, kuten puhelimen latauspaikkoja ja viilennystä kesäkuumilla.<br/><br/>Prosessi: Työskentelymme sisälsi nopean benchmarkkauksen, ideoinnin, luonnostelun, mallintamisen, mockupit sekä logon ja brändäyksen suunnittelun. Aikarajoitusten vuoksi prosessi eteni sprinttimäisesti: ideoimme, karsimme ja yhdistelimme ratkaisuja tiiviissä tahdissa.<br/><br/>Oma rooli: Olin mukana lähes kaikissa muissa projektin vaiheissa paitsi mallintamisessa. Osallistuin logon kehittelyyn, brändäykseen ja mockuppien tekemiseen sekä pidin huolta aikataulusta ja kokonaisuuden yhtenäisyydestä.<br/><br/>Lopputulos: Tiimimme voitti kunniamaininnan innovatiivisella ja oivaltavalla konseptilla. Ratkaisu sisälsi kaksi erilaista penkkiä:<ul style=\"margin: 0\"><li>Pieni penkki tunnisti lähellä olevat älylaitteet Bluetoothin avulla ja tarjosi käyttäjälle mahdollisuuden hyödyntää lyhtypylvästä istuimena. Kun käyttäjä hyväksyi pyynnön, lamppu laskeutui pylvästä pitkin ja toimi istuintasona. Käytön jälkeen se nousi viiveellä takaisin ylös.</li><li>Suurempi penkki sisälsi aurinkopaneeleilla varustetun sateen- ja auringonsuojan sekä latauspisteen. Se keräsi sadeveden talteen ja puhdisti sen, minkä jälkeen vesi hyödynnettiin kattoon integroiduissa sumuttimissa, jotka viilensivät käyttäjiä kuumalla säällä.</li></ul>",
+        "Koto": "Kuvaus: Projektin tavoitteena oli kehittää kampukselle huonekalu tai muu ratkaisu, joka houkuttelee opiskelijoita paikalle etäopiskelun sijaan. Halusin suunnitella konseptin, joka tukee yhteisöllisyyttä ja opiskelijoiden hyvinvointia.<br/><br/>Prosessi: Aloitin projektin muotoiluprosessin mukaisesti benchmarkkauksella. Haastattelujen avulla tarkastelin haastetta sekä opiskelijan että opettajan näkökulmasta. Ideoin runsaasti, yhdistelin ja karsin ideoita ja valitsin jatkoon käyttäjälähtöisimmät ratkaisut. Tein useita luonnoksia Photoshopilla ja mallinsin prototyypin, josta keräsin palautetta. Palautteen pohjalta tein viimeiset muutokset.<br/><br/>Lopputulos: KOTO-venyttelyalue on suunniteltu koulujen avariin aulatiloihin. Se tarjoaa opiskelijoille mahdollisuuden kokoontua, viettää aikaa yhdessä ja huolehtia samalla hyvinvoinnistaan. Alueella voi venytellä ja roikkua eri korkeuksille sijoitetuissa puolapuissa, ja siihen voi liittää lisäosia, kuten vehreät kukkalaatikot, istuinrahit, renkaat tai keinun. Ratkaisu sai positiivisen vastaanoton – käyttäjälähtöisen suunnittelun avulla syntyi konsepti, jota opiskelijat olivat kaivanneet taukojen virkistykseksi.",
+        "Lumous": "Kuvaus: Somistevuokraamo Lumouksen omistajat toivoivat logon ja verkkosivujen uudistusta.  Tavoitteena oli luoda visuaalisesti yhtenäinen ja käyttäjälähtöinen kokonaisuus, joka tukee yrityksen arvoja ja tuo esiin yrittäjien persoonallisuutta.<br/><br/>Prosessi: Aloitin projektin benchmarkkauksella ja perehdyin yrityksen toimintaan sekä arvoihin haastatteluiden avulla. Hyödynsin palvelumuotoilun menetelmiä, kuten käyttäjäpolun ja kosketuspisteiden tarkastelua, joiden avulla hahmotin asiakkaan näkökulman palveluun. Suunnittelin logon ja värimaailman, laadin brändikuvaukset yhteistyössä omistajien kanssa ja rakensin verkkosivustolle uuden visuaalisen ilmeen. Sivustosta tein käyttäjäystävällisemmän lisäämällä sinne palvelupolun ja sijaintikartan sekä antamalla suosituksia käytettävyyden parantamiseksi. Korostin yrittäjien roolia ja näkyvyyttä osana viestintää. Muutokset toteutin Booqable-alustan sallimissa rajoissa ja hyödynsin työssäni muun muassa informaatiomuotoilun sekä brändimuotoilun teoriaa.<br/><br/>Lopputulos: Projektin tuloksena syntyi raikas ja yhtenäinen visuaalinen kokonaisuus: uusi logo, värimaailma ja verkkosivusto, joka on aiempaa selkeämpi ja käyttäjälähtöisempi. Palvelumuotoilun menetelmät auttoivat varmistamaan, että ratkaisut tukivat asiakkaiden tarpeita ja ohjasivat heitä luontevasti eteenpäin palvelupolulla. Uudistus toi esiin yrityksen arvot ja yrittäjien persoonallisuuden sekä loi pohjan houkuttelevalle ja helposti lähestyttävälle asiakaskokemukselle.",
+        "Pandakalenteri": "Kuvaus: Suunnittelin magneettisen päiväkalenterin 3-vuotiaalle lapselle tukemaan päivän kulun hahmottamista. Tavoitteena oli luoda lapselle käytännöllinen, mieluisa ja muunneltava apuväline arjen jäsentämiseen.<br/><br/>Prosessi: Aloitin projektin benchmarkkaamalla olemassa olevia ratkaisuja ja vertailemalla erilaisia toteutustapoja. Haastattelin lasta ja vanhempia saadakseni käsityksen tarpeista ja lapsen toiveista. Rakensin moodboardin värimaailman ja tyylisuunnan määrittelyyn ja suunnittelin rakenteen käsitekartan avulla. Prosessissa hyödynsin palvelumuotoilun tuplatimantti-mallia: ideoin, prototypoin, testasin ja keräsin palautetta, jonka pohjalta tein parannuksia.<br/><br/>Lopputulos: Tuloksena syntyi helppokäyttöinen, muunneltava ja kestävä päiväkalenteri lapselle, joka koostuu 24 magneettiosasta ja jonka voi kiinnittää esimerkiksi jääkaapin oveen. Kalenteri on ollut lapselle mieluisa ja osoittautunut toimivaksi arjen apuvälineeksi. Käyttäjälähtöinen lähestymistapa teki lopputuloksesta paitsi toimivan myös lapselle merkityksellisen – hän koki, että kalenteri oli tehty juuri hänen tarpeitaan ja toiveitaan varten."
     },
     "photography": {
         "Anna": "Syksyiset perhekuvaukset Tampereen Arboretumissa.",
         "Martsu": "Henkilökuvaukset kauneusalan yrittäjälle.",
-        "Samu": "Suloiset tuotekuvat mainokseen.",
+        "Samu": "Suloinen tuotekuva mainokseen.",
         "Korut": "Talviset tuotekuvaukset itse tehdyistä koruista.",
         "Kangas": "Näillä kuvilla kartutettiin Luomisen Ihme -kangaskaupan kuvamaailmaa.",
         "Matka": "Henkeäsalpaavan upeat matkakuvat Seychelleiltä.",
         "Kattaus": "Suunnittelemani kattauskuvaukset, jotka toteutin yhteistyössä somistevuokraamo Lumouksen kanssa. Kuvia yritys hyödynsi sosiaalisessa mediassa sekä internetsivustoillaan.",
         "Sinihelmi": "Nämä kuvat otin, kun rakensin kuvitteelliselle hääalan yritykselle visuaalista ilmettä.",
-        "Roosa": "Juhannuksena kuvasin tätä pientä prinsessaa."
+        "Roosa": "Juhannuksena kuvasin tätä pientä prinsessaa.",
+        "Oliver": "Elokuun perhekuvaukset Tampereen Arboretumissa.",
+        "Silta": "Elokuun perhekuvaukset Tampereen Arboretumissa.",
+        "Laukku": "",
+        "Maisema": "",
+        "Kutsukortit": "Tuotekuvaukset uniikeista kutsukorttikokonaisuuksista, jotka syntyivät opinnäytetyöni lopputuloksena."
     },
     "mode": {
         "dark": "Dark mode",

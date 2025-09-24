@@ -89,19 +89,19 @@ export const getPalette = (mode: PaletteMode) => ({
     palette: {
         mode,
         primary: {
-            main: "#b6e3e3",
+            main: "#61b8b8",
             ligth: "#dffdf8",
             dark: "#7c9d9d",
             contrastText: "#fff",
         },
         secondary: {
-            main: "#7c9d9d",
+            main: "#336060",
             light: "#7c9d9d",
-            dark: "#7c9d9d",
+            dark: "#336060",
             contrastText: "rgba(0, 0, 0, 0.87)",
         },
         background: {
-            icon: "#b6e3e3",
+            icon: "#61b8b8",
             paper: "#fff",
         },
         text: {

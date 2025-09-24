@@ -7,7 +7,7 @@ const Profile = () => {
 
     return (
         <Layout>
-            <img src="profile_banner.png" alt="Profiili" width="100%" />
+            <img src="profile_banner2.png" alt="Profiili" width="100%" />
             <Typography variant="body1" textAlign="justify" sx={{ mt: 2, whiteSpace: "pre-wrap" }}>
                 {t("aboutMeContent").replace(/<br\/>/g, "\n")}
             </Typography>

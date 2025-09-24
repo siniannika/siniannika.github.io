@@ -9,7 +9,7 @@ import ImageList, { StyledImageListItem } from "../common/ImageList";
 const PortfolioSection = () => {
     const { t } = useTranslation();
     const { section } = useParams();
-    const { title, items } = getSection(section);
+    const { title, items, cols = 3, variant = "masonry" } = getSection(section);
     const navigate = useNavigate();
 
     const handleItemClick = (path: string | undefined) => {
@@ -23,14 +23,14 @@ const PortfolioSection = () => {
             <Layout header={t(title)} backButton>
                 {groups.map((g) => (
                     <React.Fragment key={g}>
-                        <ImageList variant="masonry" cols={1} gap={10}>
+                        <ImageList variant={variant} cols={1} gap={10}>
                             {items
                                 .filter((i) => i.fullWidth && (i.group ?? 0) === g)
                                 .map((i) => (
                                     <ImageItem key={i.img ?? i.video} {...i} handleClick={handleItemClick} />
                                 ))}
                         </ImageList>
-                        <ImageList variant="masonry" cols={3} gap={10}>
+                        <ImageList variant={variant} cols={cols} gap={10}>
                             {items
                                 .filter((i) => !i.fullWidth && (i.group ?? 0) === g)
                                 .map((i) => (
@@ -55,11 +55,11 @@ const StyledImageItem = styled(StyledImageListItem)(() => ({
     },
 }));
 
-const ImageItem = ({ img, video, fileExt = "png", height, handleClick }: ImgItem & { handleClick: (img: string | undefined) => void }) => {
+const ImageItem = ({ img, video, fileExt = "png", height, handleClick, cols }: ImgItem & { handleClick: (img: string | undefined) => void }) => {
     const { section } = useParams();
 
     return (
-        <StyledImageItem key={img ?? video} rows={2} onClick={() => handleClick(img ?? video)}>
+        <StyledImageItem key={img ?? video} cols={cols} rows={2} onClick={() => handleClick(img ?? video)}>
             {video ? (
                 <video autoPlay loop muted src={`${section}/${video}.${fileExt}`} height={height} />
             ) : (

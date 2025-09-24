@@ -8,4 +8,5 @@ export enum PortfolioSectionPath {
     EventDesign = "event_design",
     Branding = "branding",
     Photography = "photography",
+    ServiceDesign = "service_design",
 }

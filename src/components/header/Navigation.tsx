@@ -73,9 +73,9 @@ export const MobileNavigationMenu = ({ open, setOpen, sx }: MobileNavigationMenu
                 {pages.map(({ path, label, Icon }) => (
                     <ListItemButton key={path} selected={currentPath === path} onClick={() => handleNavItemClick(path)}>
                         <ListItemIcon>
-                            <Icon sx={{ color: "text.primary" }} />
+                            <Icon sx={{ color: "primary.main" }} />
                         </ListItemIcon>
-                        <ListItemText>{t(label)}</ListItemText>
+                        <ListItemText sx={{ color: "secondary.main" }}>{t(label)}</ListItemText>
                     </ListItemButton>
                 ))}
             </List>

@@ -88,7 +88,7 @@ export const LayoutHeader = ({ text, Icon, backButton = false }: HeaderProps) =>
     const navigate = useNavigate();
 
     return text ? (
-        <StyledTypography variant="h4">
+        <StyledTypography variant="h4" color="primary">
             {backButton ? (
                 <StyledIconButton onClick={() => navigate("../")}>
                     <ArrowBackIcon />

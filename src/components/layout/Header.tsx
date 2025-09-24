@@ -29,12 +29,12 @@ function Header() {
                 <Container maxWidth={false}>
                     <Toolbar disableGutters>
                         <IconButton href="#" color="secondary" sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}>
-                            <MyAvatar />
+                            <MyAvatar blue />
                         </IconButton>
                         <MobileNavigationMenu open={openMenu === MenuType.Nav} setOpen={handleSetMenuOpen(MenuType.Nav)} sx={{ flexGrow: 1 }} />
                         <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
                             <IconButton href="#" onClick={handleCloseMenu}>
-                                <MyAvatar />
+                                <MyAvatar blue />
                             </IconButton>
                         </Box>
                         <Box sx={{ flexGrow: 0, width: "48px", display: { xs: "flex", md: "none" } }}></Box>
